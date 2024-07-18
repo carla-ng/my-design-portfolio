@@ -1,0 +1,23 @@
+
+#header {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+
+    nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+
+            li {
+                font-weight: 500;
+                letter-spacing: 2px;
+                padding: 0 1rem;
+
+                span {}
+            }
+        }
+    }
+}

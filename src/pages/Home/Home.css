@@ -1,0 +1,19 @@
+#home {
+    width: 100%;
+
+    .introduction {
+        max-width: 700px;
+
+        .introduction__title {}
+
+        .introduction__text {
+            
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        
+        margin-block-start: 5rem;
+    }
+}
