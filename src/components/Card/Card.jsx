@@ -1,8 +1,11 @@
 import './Card.css';
 
-const Card = ({image, title, description}) => {
+const Card = ({image, title, description, additionalClass}) => {
+    const defaultClass = 'card'
+    const combinedClass = `${defaultClass} ${additionalClass ? additionalClass : ''}`.trim();
+
     return (
-        <article className="card">
+        <article className={ combinedClass }>
             <figure className="card__img-container">
                 <img src={ image } alt="Card photo"/>
             </figure>
