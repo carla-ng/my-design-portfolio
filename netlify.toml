@@ -1,0 +1,3 @@
+[build]
+base = "my-design-portfolio/"
+publish = "dist"
