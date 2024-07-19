@@ -1,26 +1,36 @@
 //import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import useFadeIn from '../../hooks/useFadeIn';
 import './Header.css';
 
 const Header = () => {
+    const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false)
+
     const [isOpen, setIsOpen] = useState(false)
     const [isClosing, setIsClosing] = useState(false)
 
+    const fadeInClass = useFadeIn()
+
+
     const toggleMenu = () => {
-        if (isOpen) {
-            setIsClosing(true);
+        if ( isOpen ) {
+            setIsClosing(true)
+            setHamburgerIsOpen(false)
+
             setTimeout(() => {
-                setIsOpen(false);
-                setIsClosing(false);
-            }, 500); // Match this duration with your CSS transition duration
+                setIsOpen(false)
+                setIsClosing(false)
+            }, 500); // Match this duration with CSS transition duration
         } else {
-            setIsOpen(true);
+            setIsOpen(true)
+            setHamburgerIsOpen(true)
         }
     }
 
+
     return (
-        <header id="header">
-            <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={ toggleMenu }>
+        <header id="header" className={ fadeInClass }>
+            <div className={`hamburger ${hamburgerIsOpen ? 'open' : ''}`} onClick={ toggleMenu }>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
