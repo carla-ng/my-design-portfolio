@@ -4,6 +4,11 @@
     max-width: 1200px;
     padding: 1rem;
 
+    @media ( max-width: 768px ) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .hamburger {
         display: none;
         flex-direction: column;
