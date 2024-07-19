@@ -4,9 +4,18 @@ import './Header.css';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isClosing, setIsClosing] = useState(false)
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
+        if (isOpen) {
+            setIsClosing(true);
+            setTimeout(() => {
+                setIsOpen(false);
+                setIsClosing(false);
+            }, 500); // Match this duration with your CSS transition duration
+        } else {
+            setIsOpen(true);
+        }
     }
 
     return (
@@ -17,7 +26,7 @@ const Header = () => {
                 <div className="bar"></div>
             </div>
 
-            <nav className={`nav ${isOpen ? 'open' : ''}`}>
+            <nav className={`nav ${isOpen ? 'open' : ''} ${isClosing ? 'closing' : ''}`}>
                 <ul>
                     {/*
                     <li><Link to="/">Home</Link></li>

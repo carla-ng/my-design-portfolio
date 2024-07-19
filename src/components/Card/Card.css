@@ -12,13 +12,18 @@
     
 
     .card__img-container {
-        background-color: #fba2ff;
         margin: 0;
+        max-height: 359px;
+        overflow: hidden;
         width: 100%;
 
         img {
             width: 100%;
         }
+    }
+
+    &.challenges {
+        .card__img-container { background-color: #fba2ff; }
     }
 
     .card__title {
