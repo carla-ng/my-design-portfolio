@@ -5,7 +5,6 @@ import './Home.css';
 import useFadeIn from '../../hooks/useFadeIn';
 import Card from '../../components/Card/Card.jsx';
 
-
 const Home = () => {
     const fadeInClass = useFadeIn()
 
@@ -14,7 +13,7 @@ const Home = () => {
 
             <div className="introduction">
                 <h1 className="introduction__title">
-                    <span>¡Hola! </span>
+                    <span>¡Hola!</span>
                     <span>Soy Carla Nardone</span>
                 </h1>
                 <p className={`introduction__text ${fadeInClass}`}>

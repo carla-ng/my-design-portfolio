@@ -1,5 +1,5 @@
 //import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useFadeIn from '../../hooks/useFadeIn';
 import './Header.css';
 
@@ -26,6 +26,19 @@ const Header = () => {
             setHamburgerIsOpen(true)
         }
     }
+
+
+    useEffect(() => {
+        if ( isOpen ) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, [isOpen]);
 
 
     return (

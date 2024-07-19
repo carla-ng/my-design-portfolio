@@ -14,15 +14,14 @@ body {
     width: 100%;
 
     .page {
+        margin: 5rem auto;
         padding: 1rem;
 
         @media ( max-width: 768px ) {
-            margin: 5em auto 3rem auto;
             max-width: 550px;
         }
 
         @media ( min-width: 769px ) {
-            margin: 5rem auto 3rem auto;
             max-width: 1200px;
         }
 
@@ -82,6 +81,8 @@ body {
 .fade-in.show {
     opacity: 1;
 }
+
+.no-scroll { overflow: hidden; }
 
 @keyframes slide-up {
     from {
