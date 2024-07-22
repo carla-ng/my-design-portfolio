@@ -110,7 +110,10 @@
                     margin: 1rem 0;
                 }
 
-                span {}
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
             }
         }
     }

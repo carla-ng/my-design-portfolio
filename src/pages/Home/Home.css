@@ -6,27 +6,19 @@
         @media ( min-width: 769px ) {
             padding: 0 1rem;
         }
-
-        .introduction__title {
-            
-        }
-
-        .introduction__text {
-            
-        }
     }
 
     .projects-container {
-        display: flex;
         margin-block-start: 5rem;
 
         @media ( max-width: 768px ) {
-            flex-direction: column;
             margin: 5rem auto 0 auto;
         }
 
         @media ( min-width: 769px ) {
-            flex-direction: row;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
         }
     }
 }

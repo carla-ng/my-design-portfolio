@@ -1,5 +1,6 @@
 //import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import useFadeIn from '../../hooks/useFadeIn';
 import './Header.css';
 
@@ -20,7 +21,7 @@ const Header = () => {
             setTimeout(() => {
                 setIsOpen(false)
                 setIsClosing(false)
-            }, 500); // Match this duration with CSS transition duration
+            }, 500); // match this duration with CSS transition duration
         } else {
             setIsOpen(true)
             setHamburgerIsOpen(true)
@@ -51,21 +52,14 @@ const Header = () => {
 
             <nav className={`nav ${isOpen ? 'open' : ''} ${isClosing ? 'closing' : ''}`}>
                 <ul>
-                    {/*
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    */}
                     <li>
-                        <span>Proyectos</span>
+                        <Link to="/">Proyectos</Link>
                     </li>
                     <li>
                         <span>Sobre mí</span>
                     </li>
                     <li>
                         <span>Contacto</span>
-                    </li>
-                    <li>
-                        <span>ES</span>
                     </li>
                 </ul>
             </nav>
