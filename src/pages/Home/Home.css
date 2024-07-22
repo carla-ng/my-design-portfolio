@@ -1,13 +1,4 @@
 #home {
-
-    .introduction {
-        max-width: 700px;
-
-        @media ( min-width: 769px ) {
-            padding: 0 1rem;
-        }
-    }
-
     .projects-container {
         margin-block-start: 5rem;
 
