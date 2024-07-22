@@ -96,6 +96,30 @@
                     max-width: 300px;
                 }
             }
+
+            .collapsed-content {
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform 0.5s ease, height 0.5s ease;
+                opacity: 0;
+
+                &.visible {
+                    transform: scaleY(1);
+                    opacity: 1;
+                }
+
+                &.hidden {
+                    height: 0;
+                }
+            }
+            
+            .collapse {
+                cursor: pointer;
+                color: blue;
+                transition: color 0.3s ease;
+
+                &:hover { color: darkblue; }
+            }
         }
     }
 }

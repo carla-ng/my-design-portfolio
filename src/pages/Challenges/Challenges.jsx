@@ -25,6 +25,16 @@ import HomepageMockup from '../../assets/images/challenges/homepage_mockup.jpg';
 /*import HomepagePreview from '../../assets/images/challenges/homepage_preview.png';*/
 
 const Challenges = () => {
+    const [collapsedStates, setCollapsedStates] = useState([true, true])
+
+    const toggleCollapse = ( index ) => {
+        setCollapsedStates(prevStates => {
+            const newStates = [...prevStates]
+            newStates[index] = !newStates[index]
+            return newStates
+        })
+    }
+
     const fadeInClass = useFadeIn()
 
     return (
@@ -53,7 +63,7 @@ const Challenges = () => {
 
                     <p>El reto en este caso era crear una página de signup, por mi parte decidí diseñar una página destinada a una red social para gamers. El objetivo principal fue crear una experiencia de usuario fluida y accesible, permitiendo a los usuarios registrarse de manera rápida y sencilla.</p>
 
-                    <div className="collapsed-content">
+                    <div className={`collapsed-content ${collapsedStates[0] ? 'hidden' : 'visible'}`}>
                         <p>Al inicio del proceso hice un brainstorming y listé distintos aspectos a tomar en cuenta, independientemente de si serían incluidos en el diseño final o no:</p>
 
                         <ul>
@@ -84,8 +94,8 @@ const Challenges = () => {
                         </div>
                     </div>
 
-                    <div className="collapse">
-                        Ver más
+                    <div className="collapse" onClick={() => toggleCollapse(0)}>
+                        { collapsedStates[0] ? 'Ver más' : 'Ver menos' }
                     </div>
                     
                 </div>
