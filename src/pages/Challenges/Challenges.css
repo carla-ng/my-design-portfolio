@@ -144,10 +144,12 @@
                     path { fill: #000; }
 
                     &:hover {
-                        background-color: #000;
-                        border: 2px solid #fff;
-                        color: #fff;
-                        path { fill: #fff; }
+                        @media ( min-width: 769px ) {
+                            background-color: #000;
+                            border: 2px solid #fff;
+                            color: #fff;
+                            path { fill: #fff; }
+                        }
                     }
                 }
 
