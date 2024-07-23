@@ -40,4 +40,8 @@
             @media ( min-width: 769px ) { line-height: 1.6; }
         }
     }
+
+    &:not(.comingsoon) {
+        a:hover { color: rgba(0, 0, 0, 0.5); }
+    }
 }

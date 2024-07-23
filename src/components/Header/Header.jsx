@@ -53,7 +53,7 @@ const Header = () => {
             <nav className={`nav ${isOpen ? 'open' : ''} ${isClosing ? 'closing' : ''}`}>
                 <ul>
                     <li>
-                        <Link to="/">Proyectos</Link>
+                        <Link to="/" onClick={ toggleMenu }>Proyectos</Link>
                     </li>
                     <li>
                         <span>Sobre mí</span>

@@ -108,7 +108,9 @@ body {
     opacity: 1;
 }
 
-.no-scroll { overflow: hidden; }
+.no-scroll {
+    @media ( max-width: 768px ) { overflow: hidden; }
+}
 
 @keyframes slide-up {
     from {
