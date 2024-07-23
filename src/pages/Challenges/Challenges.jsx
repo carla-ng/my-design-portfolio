@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import './Challenges.css';
 import useFadeIn from '../../hooks/useFadeIn';
@@ -26,13 +26,48 @@ import HomepageMockup from '../../assets/images/challenges/homepage_mockup.jpg';
 
 const Challenges = () => {
     const [collapsedStates, setCollapsedStates] = useState([true, true])
+    const contentRefs = useRef([])
+    const headerRefs = useRef([])
+
+    useEffect(() => {
+        // setting initial height
+        contentRefs.current.forEach(( ref, index ) => {
+            if ( ref ) {
+                ref.style.height = collapsedStates[index] ? '0px' : `${ref.scrollHeight}px`
+            }
+        });
+    }, [collapsedStates])
 
     const toggleCollapse = ( index ) => {
-        setCollapsedStates(prevStates => {
-            const newStates = [...prevStates]
-            newStates[index] = !newStates[index]
-            return newStates
-        })
+        if ( !collapsedStates[index] ) {
+            // Scroll to header before collapsing
+            headerRefs.current[index].scrollIntoView({ behavior: 'smooth' });
+
+            setTimeout(() => {
+                setCollapsedStates(prevStates => {
+                    const newStates = [...prevStates];
+                    newStates[index] = true;
+                    return newStates;
+                })
+
+                setTimeout(() => {
+                    contentRefs.current[index].style.height = '0px'
+                }, 0)
+            }, 150); // match this duration with CSS transition duration
+        } else {
+            setCollapsedStates(prevStates => {
+                const newStates = [...prevStates]
+                newStates[index] = false
+                return newStates
+            });
+        }
+    }
+
+    const getHeight = ( index ) => {
+        if (contentRefs.current[index]) {
+            return collapsedStates[index] ? '0px' : `${contentRefs.current[index].scrollHeight}px`;
+        }
+        return '0px';
     }
 
     const fadeInClass = useFadeIn()
@@ -55,7 +90,7 @@ const Challenges = () => {
 
             <section className={`challenges-container ${fadeInClass}`}>
                 <div className="challenges__signup-page">
-                    <h2>Crear Cuenta</h2>
+                    <h2 ref={el => headerRefs.current[0] = el}>Crear Cuenta</h2>
 
                     <figure className="challlenges__preview signup">
                         <img src={ SignUpPreview } alt="Preview de Crear Cuenta en un movil con una mano sujetandolo"/>
@@ -63,7 +98,11 @@ const Challenges = () => {
 
                     <p>El reto en este caso era crear una página de signup, por mi parte decidí diseñar una página destinada a una red social para gamers. El objetivo principal fue crear una experiencia de usuario fluida y accesible, permitiendo a los usuarios registrarse de manera rápida y sencilla.</p>
 
-                    <div className={`collapsed-content ${collapsedStates[0] ? 'hidden' : 'visible'}`}>
+                    <div
+                        className={`collapsed-content ${collapsedStates[0] ? 'hidden' : 'visible'}`}
+                        ref={el => contentRefs.current[0] = el}
+                        style={{ height: getHeight(0) }}
+                    >
                         <p>Al inicio del proceso hice un brainstorming y listé distintos aspectos a tomar en cuenta, independientemente de si serían incluidos en el diseño final o no:</p>
 
                         <ul>
@@ -97,12 +136,11 @@ const Challenges = () => {
                     <div className="collapse" onClick={() => toggleCollapse(0)}>
                         { collapsedStates[0] ? 'Ver más' : 'Ver menos' }
                     </div>
-                    
                 </div>
 
 
                 <div className="challenges__checkout">
-                    <h2>Checkout</h2>
+                    <h2 ref={el => headerRefs.current[1] = el}>Checkout</h2>
 
                     <figure className="challlenges__preview checkout">
                         <img src={ CheckoutMockup } alt="Preview de Checkout"/>
@@ -110,74 +148,105 @@ const Challenges = () => {
 
                     <p>Para este proyecto, diseñé una página de checkout integral para una tienda de ropa y maquillaje. Opté por incluir todas las secciones esenciales en una única página en lugar de hacerlo paso a paso. Este enfoque permite a los usuarios tener toda la información disponible en un solo lugar y modificarla rápidamente si lo desean.</p>
 
-                    <p>Para organizar mejor los elementos a tomar en cuenta para el diseño, he creado el siguiente listado:</p>
+                    <div
+                        className={`collapsed-content ${collapsedStates[1] ? 'hidden' : 'visible'}`}
+                        ref={el => contentRefs.current[1] = el}
+                        style={{ height: getHeight(1) }}
+                    >
+                        <p>Para organizar mejor los elementos a tomar en cuenta para el diseño, he creado el siguiente listado:</p>
 
-                    <ul>
-                        <li>Logo/nombre de la marca.</li>
-                        <li>Título de &quot;Checkout&quot;.</li>
-                        <li>Botón/Flecha para volver a la página anterior.</li>
-                        <li>Resumen de la orden de compra: nombre de objetos, imágenes, tamaños, colores, cantidades, precios, subtotal.</li>
-                        <li>Opción de editar objetos de compra: se puede disminuir o aumentar la cantidad de un objeto a comprar, también se pueden eliminar.</li>
-                        <li>Información del cliente: email y número de teléfono para confirmación de compra y actualizaciones, dirección de envió incluyendo calle, ciudad, código postal, país.</li>
-                        <li>Dirección de facturación (se podrá elegir la misma que la de envío o introducir una distinta)</li>
-                        <li>Método de envío: distintas opciones con tiempos de espera estimados, a distintos precios.</li>
-                        <li>Información de pago: tarjeta de crédito/débito, paypal, otro.</li>
-                        <li>Botón de realizar/finalizar compra.</li>
-                        <li>Otros elementos opcionales: código de descuento, link o información de contacto para atención al cliente en caso de incidencias, aceptar términos y condiciones, obtener puntos por la compra.</li>
-                    </ul>
+                        <ul>
+                            <li>Logo/nombre de la marca.</li>
+                            <li>Título de &quot;Checkout&quot;.</li>
+                            <li>Botón/Flecha para volver a la página anterior.</li>
+                            <li>Resumen de la orden de compra: nombre de objetos, imágenes, tamaños, colores, cantidades, precios, subtotal.</li>
+                            <li>Opción de editar objetos de compra: se puede disminuir o aumentar la cantidad de un objeto a comprar, también se pueden eliminar.</li>
+                            <li>Información del cliente: email y número de teléfono para confirmación de compra y actualizaciones, dirección de envió incluyendo calle, ciudad, código postal, país.</li>
+                            <li>Dirección de facturación (se podrá elegir la misma que la de envío o introducir una distinta)</li>
+                            <li>Método de envío: distintas opciones con tiempos de espera estimados, a distintos precios.</li>
+                            <li>Información de pago: tarjeta de crédito/débito, paypal, otro.</li>
+                            <li>Botón de realizar/finalizar compra.</li>
+                            <li>Otros elementos opcionales: código de descuento, link o información de contacto para atención al cliente en caso de incidencias, aceptar términos y condiciones, obtener puntos por la compra.</li>
+                        </ul>
 
-                    <p>Este caso fue más complejo y ha tomado más tiempo decidir los elementos a incluir en la página, en especial porque un proceso de pago puede resultar más delicado para el usuario y necesita estar todo más claro.</p>
+                        <p>Este caso fue más complejo y ha tomado más tiempo decidir los elementos a incluir en la página, en especial porque un proceso de pago puede resultar más delicado para el usuario y necesita estar todo más claro.</p>
 
-                    <div className="challlenges__images">
-                        <img className="challenges__sketch" src={ CheckoutSketch } alt="Sketch de Checkout hecho a mano"/>
+                        <div className="challlenges__images">
+                            <img className="challenges__sketch" src={ CheckoutSketch } alt="Sketch de Checkout hecho a mano"/>
 
-                        <img className="challenges__wireframe" src={ CheckoutWireframe } alt="Wireframe de Checkout hecho en Figma"/>
+                            <img className="challenges__wireframe" src={ CheckoutWireframe } alt="Wireframe de Checkout hecho en Figma"/>
+                        </div>
+
+                        <p>El mockup del diseño final con Figma, manteniendo un estilo claro y limpio:</p>
+
+                        <div className="challlenges__images">
+                            <img className="challenges__mockup" src={ CheckoutMockup } alt="Mockup final de Checkout hecho en Figma"/>
+                        </div>
                     </div>
 
-                    <p>El mockup del diseño final con Figma, manteniendo un estilo claro y limpio:</p>
-
-                    <div className="challlenges__images">
-                        <img className="challenges__mockup" src={ CheckoutMockup } alt="Mockup final de Checkout hecho en Figma"/>
+                    <div className="collapse" onClick={() => toggleCollapse(1)}>
+                        { collapsedStates[1] ? 'Ver más' : 'Ver menos' }
                     </div>
                 </div>
 
 
                 <div className="challenges__calculator">
-                    <h2>Calculadora</h2>
+                    <h2 ref={el => headerRefs.current[2] = el}>Calculadora</h2>
                     
                     <figure className="challlenges__preview calculator">
                         <img src={ CalculatorMockup } alt="Preview de la Calculadora"/>
                     </figure>
 
-                    <div className="challlenges__images">
-                        <img className="challenges__sketch" src={ CalculatorSketch } alt="Sketch de la Calculadora hecho a mano"/>
+                    <div
+                        className={`collapsed-content ${collapsedStates[2] ? 'hidden' : 'visible'}`}
+                        ref={el => contentRefs.current[2] = el}
+                        style={{ height: getHeight(2) }}
+                    >
+                        <div className="challlenges__images">
+                            <img className="challenges__sketch" src={ CalculatorSketch } alt="Sketch de la Calculadora hecho a mano"/>
 
-                        <img className="challenges__wireframe" src={ CalculatorWireframe } alt="Wireframe de la Calculadora hecho en Figma"/>
-                    </div>
+                            <img className="challenges__wireframe" src={ CalculatorWireframe } alt="Wireframe de la Calculadora hecho en Figma"/>
+                        </div>
 
-                    <div className="challlenges__images">
-                        <img className="challenges__mockup" src={ CalculatorMockup } alt="Mockup final de la Calculadora hecho en Figma"/>
+                        <div className="challlenges__images">
+                            <img className="challenges__mockup" src={ CalculatorMockup } alt="Mockup final de la Calculadora hecho en Figma"/>
+                        </div>
+                    </div>                    
+
+                    <div className="collapse" onClick={() => toggleCollapse(2)}>
+                        { collapsedStates[2] ? 'Ver más' : 'Ver menos' }
                     </div>
                 </div>
 
 
                 <div className="challenges__homepage">
-                    <h2>Homepage</h2>
+                    <h2 ref={el => headerRefs.current[3] = el}>Homepage</h2>
                     
                     <figure className="challlenges__preview homepage">
                         <img src={ HomepageMockup } alt="Preview de la Homepage"/>
                     </figure>
 
-                    <div className="challlenges__images">
-                        <img className="challenges__sketch" src={ HomepageSketch } alt="Sketch de la Homepage hecho a mano"/>
+                    <div
+                        className={`collapsed-content ${collapsedStates[3] ? 'hidden' : 'visible'}`}
+                        ref={el => contentRefs.current[3] = el}
+                        style={{ height: getHeight(3) }}
+                    >
+                        <div className="challlenges__images">
+                            <img className="challenges__sketch" src={ HomepageSketch } alt="Sketch de la Homepage hecho a mano"/>
 
-                        <img className="challenges__wireframe" src={ HomepageWireframe } alt="Wireframe de la Homepage hecho en Figma"/>
+                            <img className="challenges__wireframe" src={ HomepageWireframe } alt="Wireframe de la Homepage hecho en Figma"/>
+                        </div>
+
+                        <div className="challlenges__images">
+                            <img className="challenges__mockup" src={ HomepageMockup } alt="Mockup final de la Homepage hecho en Figma"/>
+                        </div>
                     </div>
 
-                    <div className="challlenges__images">
-                        <img className="challenges__mockup" src={ HomepageMockup } alt="Mockup final de la Homepage hecho en Figma"/>
+                    <div className="collapse" onClick={() => toggleCollapse(3)}>
+                        { collapsedStates[3] ? 'Ver más' : 'Ver menos' }
                     </div>
                 </div>
+
             </section>
 
         </div>

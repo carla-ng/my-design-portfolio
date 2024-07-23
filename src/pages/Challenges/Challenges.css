@@ -98,15 +98,8 @@
             }
 
             .collapsed-content {
-                transform: scaleY(0);
-                transform-origin: top;
-                transition: transform 0.5s ease, height 0.5s ease;
-                opacity: 0;
-
-                &.visible {
-                    transform: scaleY(1);
-                    opacity: 1;
-                }
+                overflow: hidden;
+                transition: height 0.5s ease;
 
                 &.hidden {
                     height: 0;
@@ -116,6 +109,8 @@
             .collapse {
                 cursor: pointer;
                 color: blue;
+                margin: 0 auto;
+                max-width: 900px;
                 transition: color 0.3s ease;
 
                 &:hover { color: darkblue; }
