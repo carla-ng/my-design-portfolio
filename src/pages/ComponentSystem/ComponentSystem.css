@@ -1,0 +1,12 @@
+
+#component-system {
+    .component-system-container {
+        margin-block-start: 6rem;
+
+        @media ( max-width: 768px ) {
+            margin: 6rem auto 0 auto;
+        }
+
+        @media ( min-width: 769px ) { padding: 0 1rem; }
+    }
+}

@@ -26,6 +26,8 @@ import HomepagePreview from '../../assets/images/challenges/homepage_preview.png
 
 
 const Challenges = () => {
+    const fadeInClass = useFadeIn()
+    
     const initialCollapsedStates = [true, true, true, true]
     const [collapsedStates, setCollapsedStates] = useState(initialCollapsedStates)
     const contentRefs = useRef([])
@@ -82,9 +84,6 @@ const Challenges = () => {
         }
         return '0px';
     }
-
-
-    const fadeInClass = useFadeIn()
 
 
     return (
