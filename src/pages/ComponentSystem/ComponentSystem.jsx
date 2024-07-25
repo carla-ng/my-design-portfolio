@@ -1,4 +1,7 @@
 import './ComponentSystem.css';
+import ColumnsImage from '../../assets/images/system/columns.jpg';
+import SkinsImage from '../../assets/images/system/skins.jpg';
+
 import useFadeIn from '../../hooks/useFadeIn';
 
 
@@ -50,6 +53,9 @@ const ComponentSystem = () => {
                         <h4>12 Columnas</h4>
                         <p>Al inicio del proyecto, los desarrolladores recomendamos a los diseñadores basarse en un sistema de 12 columnas para los layouts y componentes del nuevo sistema, similar al de Bootstrap. Este enfoque proporciona una estructura flexible que facilita la adaptación a diferentes dispositivos, mejora la consistencia visual y simplifica el desarrollo y mantenimiento. Además, establece reglas claras para la alineación y el espaciado, lo que agiliza el proceso de diseño y mejora la colaboración entre equipos.</p>
                     </div>
+                    <figure>
+                        <img src={ ColumnsImage } alt="Ejemplo de sistema de 12 columnas" />
+                    </figure>
                 </div>                
 
                 <div className="component-system__info variants">
@@ -60,6 +66,9 @@ const ComponentSystem = () => {
                 </div>
 
                 <div className="component-system__info skins">
+                    <figure>
+                        <img src={ SkinsImage } alt="Ejemplo de codigo CSS de un skin" />
+                    </figure>
                     <div>
                         <h4>Skins</h4>
                         <p>Para proporcionar flexibilidad y variedad a los componentes y portales, se implementó el concepto de &quot;skins&quot;. Un skin es un archivo CSS que define variables para colores, tipografías y otras características visuales del portal. Aunque esta funcionalidad ya existía en el sistema anterior, se decidió mantenerla y mejorarla, ofreciendo una mayor definición y personalización para los portales.</p>
@@ -94,7 +103,7 @@ const ComponentSystem = () => {
                         <h4>Catálogo</h4>
                         <p>Ver una selección de algunos de los componentes pertenecientes al sistema creado:</p>
                         <button>
-                            <a href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank">Ver Catálogo</a>
+                            <a href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank">Ir a Catálogo</a>
                         </button>
                     </div>
                 </div>
