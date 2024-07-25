@@ -56,7 +56,7 @@ const Header = () => {
                         <Link to="/" onClick={ toggleMenu }>Proyectos</Link>
                     </li>
                     <li>
-                        <span>Sobre mí</span>
+                        <Link to="/about" onClick={ toggleMenu }>Sobre mí</Link>
                     </li>
                     <li>
                         <span>Contacto</span>
