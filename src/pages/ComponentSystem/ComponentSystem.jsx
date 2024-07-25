@@ -1,4 +1,5 @@
 import './ComponentSystem.css';
+
 import ColumnsImage from '../../assets/images/system/columns.jpg';
 import SkinsImage from '../../assets/images/system/skins.jpg';
 import ComponentsImage from '../../assets/images/system/components.png';
