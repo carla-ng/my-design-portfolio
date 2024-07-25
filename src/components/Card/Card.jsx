@@ -2,17 +2,13 @@ import './Card.css';
 import { Link } from 'react-router-dom';
 
 const Card = ({image, title, description, link, additionalClass}) => {
-    const combinedClass = `card ${additionalClass ? additionalClass : ''}`.trim();
-    const imageAlt = `${title} preview`
-
+    const combinedClass = `card ${additionalClass ? additionalClass : ''}`.trim()
     const pageLink = `/${link}`
 
     return (
         <article className={ combinedClass }>
             <Link to={ pageLink }>
-                <figure className="card__img-container">
-                    <img src={ image } alt={ imageAlt }/>
-                </figure>
+                <div className="card__img-container" style={{backgroundImage: `url(${image})`}}></div>
 
                 <h4 className="card__title">{ title }</h4>
                 

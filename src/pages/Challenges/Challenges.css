@@ -1,5 +1,9 @@
 
 #challenges {
+    padding: 1rem;
+    @media ( max-width: 768px ) { max-width: 550px; }
+    @media ( min-width: 769px ) { max-width: 1200px; }
+
     .challenges-container {
         margin-block-start: 6rem;
 

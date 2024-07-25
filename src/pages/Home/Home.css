@@ -1,4 +1,8 @@
 #home {
+    padding: 1rem;
+    @media ( max-width: 768px ) { max-width: 550px; }
+    @media ( min-width: 769px ) { max-width: 1200px; }
+
     .projects-container {
         margin-block-start: 5rem;
 
