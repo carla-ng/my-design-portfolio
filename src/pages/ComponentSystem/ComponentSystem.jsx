@@ -106,9 +106,7 @@ const ComponentSystem = () => {
                     </div>
                 </div>
 
-                <figure className="component-system__image">
-                    <img src={ ComponentsImage } alt="Seleccion de componentes" />
-                </figure>
+                <div className="component-system__image" style={{backgroundImage: `url(${ComponentsImage})`}}></div>
 
                 <div className="component-system__info catalogue">
                     <div>

@@ -187,10 +187,15 @@
             margin: 5rem auto 0 auto;
             max-width: 2000px;
 
-            img {
-                height: auto;
-                width: 100%;                
-            }
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            overflow: hidden;
+            width: 100%;            
+
+            @media ( min-width: 769px ) { height: 500px; }
         }
+
     }
 }
