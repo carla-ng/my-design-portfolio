@@ -94,15 +94,11 @@
                 flex-wrap: wrap;
                 margin: 2rem auto;
 
-                @media ( max-width: 768px ) {
-                    flex-direction: column;
-                }
-
-                @media ( min-width: 769px ) {
-                    flex-direction: row;
-                }
+                @media ( max-width: 768px ) { flex-direction: column; }
+                @media ( min-width: 769px ) { flex-direction: row; }
 
                 img {
+                    box-sizing: border-box;
                     height: fit-content;
                     margin-block-start: 2rem;
                     @media ( max-width: 768px ) { margin: 1rem auto; }
