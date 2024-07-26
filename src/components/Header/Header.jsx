@@ -44,6 +44,10 @@ const Header = () => {
 
     return (
         <header id="header" className={ fadeInClass }>
+            <div className="logo">
+                <Link to="/">CN</Link>
+            </div>
+
             <div className={`hamburger ${hamburgerIsOpen ? 'open' : ''}`} onClick={ toggleMenu }>
                 <div className="bar"></div>
                 <div className="bar"></div>
