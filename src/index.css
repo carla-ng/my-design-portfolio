@@ -75,14 +75,12 @@ body {
                 }
                 
                 &:hover {
-                    @media ( min-width: 769px ) {
-                        background-color: #000;
-                        border: 2px solid #fff;
-                        color: #fff;
+                    background-color: #000;
+                    border: 2px solid #fff;
+                    color: #fff;
 
-                        .default__icon {
-                            path { fill: #fff; }
-                        }
+                    .default__icon {
+                        path { fill: #fff; }
                     }
                 }
 
