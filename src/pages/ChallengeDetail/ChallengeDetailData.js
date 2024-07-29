@@ -106,7 +106,8 @@ export const challenges = {
             {
                 src: CheckoutMockup,
                 alt: 'Mockup final de Checkout hecho en Figma',
-                type: 'mockup'
+                type: 'mockup',
+                border: true
             }
         ]
     },
