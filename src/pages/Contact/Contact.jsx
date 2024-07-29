@@ -1,10 +1,17 @@
 import './Contact.css';
 
+import { useEffect } from 'react';
 import useFadeIn from '../../hooks/useFadeIn';
 
 
 const Contact = () => {
     const fadeInClass = useFadeIn()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
 
     return (
         <div id="contact" className="page">

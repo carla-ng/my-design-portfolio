@@ -5,10 +5,17 @@ import SkinsImage from '../../assets/images/system/skins.jpg';
 import ComponentsImage from '../../assets/images/system/components.png';
 
 import useFadeIn from '../../hooks/useFadeIn';
+import { useEffect } from 'react';
 
 
 const ComponentSystem = () => {
     const fadeInClass = useFadeIn()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     return (
         <div id="component-system" className="page">

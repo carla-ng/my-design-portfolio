@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import './Challenges.css';
 import useFadeIn from '../../hooks/useFadeIn';
@@ -17,6 +18,11 @@ const Challenges = () => {
     const goToProject = ( challengeId ) => {
         navigate(`/challenges/${challengeId}`)
     }
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     return (

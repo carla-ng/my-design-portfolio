@@ -1,13 +1,22 @@
+import './Home.css';
+
 import ComingSoonImage from '../../assets/images/home/comingsoon_thumbnail.jpg';
 import ChallengesImage from '../../assets/images/home/challenges_thumbnail.png';
 import ComponentSystemImage from '../../assets/images/home/component-system_thumbnail.png';
-import './Home.css';
 
+import { useEffect } from 'react';
 import useFadeIn from '../../hooks/useFadeIn';
 import Card from '../../components/Card/Card.jsx';
 
+
 const Home = () => {
     const fadeInClass = useFadeIn()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     return (
         <div id="home" className="page">

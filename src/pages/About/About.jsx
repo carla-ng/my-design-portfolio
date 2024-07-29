@@ -8,10 +8,15 @@ import DrawingFive from '../../assets/images/about/dibujo05.jpg';
 import DrawingSix from '../../assets/images/about/dibujo06.jpg';
 
 import useFadeIn from '../../hooks/useFadeIn';
+import { useEffect } from 'react';
 
 
 const About = () => {
     const fadeInClass = useFadeIn()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div id="about" className="page">
