@@ -47,8 +47,8 @@ body {
         button.default {
             display: block;
             background-color: #fff;
-            margin: 1.2rem auto 0 auto;
-            width: 100%;
+            margin-block-start: 1.4rem;
+            padding: 0;
 
             .default__text {
                 display: flex;
@@ -57,10 +57,10 @@ body {
                 border: 2px solid #000;
                 color: #000;
                 cursor: pointer;
-                font-size: 0.9rem;
+                font-size: 1rem;
                 font-weight: 600;
                 letter-spacing: 1px;
-                padding: 0.5rem 1rem;
+                padding: 0.7rem 1.1rem;
                 width: fit-content;
 
                 .default__icon {
