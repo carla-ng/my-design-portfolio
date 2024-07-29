@@ -2,17 +2,21 @@
 
 * { box-sizing: border-box; }
 
-body {
+html, body {
     display: flex;
     flex-direction: column;
 
-    background-color: #fff;
+    height: 100%;
     font-family: "Montserrat", sans-serif;
     margin: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #fff;
     min-width: 320px;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
-    width: 100%;
 
     .page {
         margin: 5rem auto;

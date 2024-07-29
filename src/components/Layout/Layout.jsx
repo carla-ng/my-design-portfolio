@@ -1,9 +1,11 @@
+import './Layout.css';
+
 import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div id="layout">
             <Header />
 
             <main>
