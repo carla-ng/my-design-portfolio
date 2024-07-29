@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/carla-ng/my-design-portfolio/blob/master/src/assets/readme_image_1.jpg?raw=true" alt="My UX/UI Design Portfolio preview">
+    <img src="https://raw.githubusercontent.com/carla-ng/my-design-portfolio/main/src/assets/readme_image_1.jpg" alt="My UX/UI Design Portfolio preview">
 </p>
 
 <br>
