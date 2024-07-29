@@ -20,7 +20,17 @@ const ChallengesDetail = () => {
 
 
     if ( !challenge ) {
-        return <div>Reto no encontrado</div>
+        return (
+            <div id="challenge-detail" className="page">
+                <div style={{ margin: '6rem auto', padding: '0 1rem', textAlign: 'center' }}>Reto no encontrado</div>
+
+                <button className="go-back default" style={{ margin: '0 auto' }}>
+                    <span className="default__text" onClick={() => navigate('/challenges')}>
+                        <span>Volver a Retos</span>
+                    </span>
+                </button>
+            </div>
+        )
     }
 
 

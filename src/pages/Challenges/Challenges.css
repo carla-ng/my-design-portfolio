@@ -78,7 +78,12 @@
                 }
             }
             
-            .view-more { max-width: 900px; }
+            .view-more {
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+                max-width: 900px;
+                width: 100%;
+            }
         }
     }
 }
