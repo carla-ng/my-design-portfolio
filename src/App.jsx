@@ -6,6 +6,7 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Challenges from './pages/Challenges/Challenges';
 import ComponentSystem from './pages/ComponentSystem/ComponentSystem';
+import ChallengeDetail from './pages/ChallengeDetail/ChallengeDetail';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/challenges" element={<Challenges />} />
+                <Route path="/challenges/:challengeId" element={<ChallengeDetail />} />
                 <Route path="/component-system" element={<ComponentSystem />} />
             </Routes>
         </Layout>

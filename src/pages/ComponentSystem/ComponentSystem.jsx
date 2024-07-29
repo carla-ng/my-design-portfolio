@@ -112,8 +112,18 @@ const ComponentSystem = () => {
                     <div>
                         <h4>Catálogo</h4>
                         <p>Ver una selección de algunos de los componentes pertenecientes al sistema creado:</p>
-                        <button>
-                            <a href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank">Ir a Catálogo</a>
+                        <button className="default">
+                            <a className="default__text" href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank">
+                            Ir a Catálogo
+                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
+                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                         </button>
                     </div>
                 </div>

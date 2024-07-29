@@ -171,14 +171,16 @@
                 p { text-align: center; }
 
                 button {
-                    display: flex;
-                    background-color: rgba(0, 126, 237, 80%);
                     margin: 2.5rem auto 0 auto;
+                    .default__text {
+                        font-size: 1.1rem;
+                        margin: auto;
 
-                    &:hover { background-color: rgba(0, 126, 237, 60%); }
-                    &:active { background-color: rgba(0, 126, 237, 100%); }
-
-                    a { color: #fff; }
+                        .default__icon {
+                            height: 30px;
+                            width: 30px;
+                        }
+                    }
                 }
             }
         }
