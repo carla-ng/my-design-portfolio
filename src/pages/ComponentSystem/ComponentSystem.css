@@ -159,30 +159,6 @@
                 h4 { text-align: center; }
                 p { text-align: center; }
             }
-
-            &.catalogue {
-                border-top: 4px solid #000;
-                border-bottom: 4px solid #000;
-                margin: 8rem auto 0 auto;
-                padding: 0 2rem 2rem 2rem;
-                width: fit-content;
-
-                h4 { text-align: center; }
-                p { text-align: center; }
-
-                button {
-                    margin: 2.5rem auto 0 auto;
-                    .default__text {
-                        font-size: 1.1rem;
-                        margin: auto;
-
-                        .default__icon {
-                            height: 30px;
-                            width: 30px;
-                        }
-                    }
-                }
-            }
         }
 
         .component-system__image {

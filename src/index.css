@@ -136,6 +136,56 @@ body {
             font-size: 1rem;
             font-weight: 500;
             padding: 0.1rem 0.3rem;
+
+            &.blue, &.pink, &.green, &.yellow {
+                color: #000;
+                font-weight: 600;
+            }
+            
+            &.blue { background-color: #c1eaff; }
+            &.pink { background-color: #ffc4e4; }
+            &.green { background-color: #c7ffd9; }
+            &.yellow { background-color: #fff5c1; }
+        }
+
+        .external-link-section {
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            margin: 8rem auto 0 auto;
+            padding: 0 2rem 2rem 2rem !important;
+            width: fit-content;
+
+            h4 { text-align: center; }
+            p { text-align: center; }
+
+            button {
+                margin: 2.5rem auto 0 auto;
+                .default__text {
+                    font-size: 1.1rem;
+                    margin: auto;
+
+                    .default__icon {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin: 1.5rem 0 2.5rem 0;
+
+            @media ( min-width: 769px ) {
+                margin-inline-start: auto;
+                margin-inline-end: auto;
+            }
+
+            li {
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.3;
+                margin-bottom: 0.5rem;
+            }
         }
     }
 }

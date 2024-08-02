@@ -115,12 +115,12 @@ const ComponentSystem = () => {
 
                 <div className="component-system__image" style={{backgroundImage: `url(${ComponentsImage})`}}></div>
 
-                <div className="component-system__info catalogue">
+                <div className="component-system__info external-link-section catalogue">
                     <div>
                         <h4>Catálogo</h4>
                         <p>Ver una selección de algunos de los componentes pertenecientes al sistema creado:</p>
                         <button className="default">
-                            <a className="default__text" href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank">
+                            <a className="default__text" href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank" rel="noopener noreferrer">
                             Ir a Catálogo
                             <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>

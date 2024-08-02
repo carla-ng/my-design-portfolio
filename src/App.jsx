@@ -7,6 +7,7 @@ import Contact from './pages/Contact/Contact';
 import Challenges from './pages/Challenges/Challenges';
 import ComponentSystem from './pages/ComponentSystem/ComponentSystem';
 import ChallengeDetail from './pages/ChallengeDetail/ChallengeDetail';
+import PersonalWebsite from './pages/PersonalWebsite/PersonalWebsite';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/challenges" element={<Challenges />} />
                 <Route path="/challenges/:challengeId" element={<ChallengeDetail />} />
                 <Route path="/component-system" element={<ComponentSystem />} />
+                <Route path="/personal-website" element={<PersonalWebsite />} />
             </Routes>
         </Layout>
     );
