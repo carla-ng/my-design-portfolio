@@ -1,6 +1,8 @@
 import './PersonalWebsite.css';
 import useFadeIn from '../../hooks/useFadeIn';
 
+import MoodBoardImg from '../../assets/images/personal-website/moodboard.jpg';
+
 
 const PersonalWebsite = () => {
     const fadeInClass = useFadeIn()
@@ -39,8 +41,8 @@ const PersonalWebsite = () => {
                         Para diseñar y estructurar mi portafolio web, realicé un análisis exhaustivo de otros portafolios de desarrolladores y diseñadores. Este proceso de análisis competitivo me ayudó a identificar buenas prácticas y áreas de mejora, asegurando que mi portafolio fuera tanto funcional como atractivo.
                     </p>
 
-                    <figure className="middle-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA MOODBOARD</div>
+                    <figure className="middle-img moodboard">
+                        <img src={ MoodBoardImg } alt="Mood board para el diseño de la web" />
                     </figure>
 
                     <p>
