@@ -172,7 +172,7 @@
             overflow: hidden;
             width: 100%;            
 
-            @media ( min-width: 769px ) { height: 500px; }
+            @media ( min-width: 769px ) { height: 400px; }
         }
 
     }

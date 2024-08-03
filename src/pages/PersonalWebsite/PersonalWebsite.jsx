@@ -4,6 +4,8 @@ import useFadeIn from '../../hooks/useFadeIn';
 import MoodBoardImg from '../../assets/images/personal-website/moodboard.jpg';
 import CSSArtImg from '../../assets/images/personal-website/cssart.jpg';
 import SitemapImg from '../../assets/images/personal-website/sitemap.jpg';
+import LighthouseImg from '../../assets/images/personal-website/lighthouse.jpg';
+import ScreenshotsImg from '../../assets/images/personal-website/screenshots.jpg';
 
 
 const PersonalWebsite = () => {
@@ -15,7 +17,7 @@ const PersonalWebsite = () => {
             <div className="introduction-outer-container">
                 <div className="introduction">
                     <h1 className="introduction__title">
-                        <span>Caso de Estudio: Diseño y Desarrollo de Mi Web Personal</span>
+                        <span>Diseño y Desarrollo de mi Web Personal</span>
                     </h1>
                     <p className={`introduction__text ${fadeInClass}`}>
                         En esta página, te presento el caso de estudio detallado de la <span className="highlighted-text">creación de mi portafolio como desarrolladora web</span>. A través de este proyecto, no solo desarrollé una plataforma para mostrar mis habilidades técnicas, sino que también apliqué principios de diseño UX/UI para crear una experiencia de usuario intuitiva y visualmente atractiva. Descubre cómo abordé el proceso de diseño y desarrollo, los desafíos encontrados, y las soluciones implementadas para crear una presencia online efectiva y coherente.
@@ -73,7 +75,7 @@ const PersonalWebsite = () => {
                         </li>
                         <li>
                             <strong>Acerca de mí</strong>:
-                            donde comparto detalles personales y mis intereses
+                            donde comparto detalles más personales y mis intereses
                         </li>
                         <li>
                             <strong>Currículum</strong>:
@@ -164,8 +166,8 @@ const PersonalWebsite = () => {
                         Para asegurar la calidad y el rendimiento de mi sitio web, utilicé herramientas como <span className="highlighted-text yellow">Lighthouse</span> y <span className="highlighted-text yellow">BrowserStack</span> para realizar una serie de pruebas exhaustivas. Estas pruebas evaluaron aspectos clave como accesibilidad, rendimiento, SEO, y buenas prácticas generales, además de verificar la compatibilidad del sitio en diversos dispositivos y sistemas operativos. A partir de los resultados obtenidos, implementé una serie de mejoras recomendadas, optimizando la velocidad de carga, la accesibilidad y el posicionamiento en motores de búsqueda.
                     </p>
 
-                    <figure className="middle-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA UN SCREENSHOT DE LIGHTHOUSE</div>
+                    <figure className="middle-img lighthouse">
+                        <img src={ LighthouseImg } alt="Resultados de Lighthouse" />
                     </figure>
 
                     <p>
@@ -189,20 +191,18 @@ const PersonalWebsite = () => {
                     </p>
                 </article>
 
-                <figure className="middle-img">
-                    <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA UNA IMAGEN AL 100% DE ANCHO CON SCREENSHOTS DE LA WEB YA EN VIVO</div>
-                </figure>
+                <div className="personal-website__image" style={{backgroundImage: `url(${ ScreenshotsImg })`}}></div>
 
                 <section className="personal-website__block external-link-section">
-                    <h4>Descubre mi portafolio de desarrollo web en acción</h4>
+                    <h4>Descubre mi sitio de desarrollo web en acción</h4>
 
                     <p>
                         Explora el sitio completo en vivo:
                     </p>
 
-                    <button className="default" aria-label="Visitar portafolio en vivo">
+                    <button className="default" aria-label="Visitar web en vivo">
                         <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            Visita mi portafolio
+                            Visita mi web
                             <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <g>
