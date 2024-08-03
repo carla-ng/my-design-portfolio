@@ -2,6 +2,8 @@ import './PersonalWebsite.css';
 import useFadeIn from '../../hooks/useFadeIn';
 
 import MoodBoardImg from '../../assets/images/personal-website/moodboard.jpg';
+import CSSArtImg from '../../assets/images/personal-website/cssart.jpg';
+import SitemapImg from '../../assets/images/personal-website/sitemap.jpg';
 
 
 const PersonalWebsite = () => {
@@ -29,10 +31,6 @@ const PersonalWebsite = () => {
                     <p>
                         El propósito de crear este portafolio web fue establecer una presencia en línea sólida y profesional, que no sólo demostrara mis habilidades técnicas y creativas en desarrollo web y diseño UX/UI, sino que también me abriera puertas a nuevas oportunidades laborales. Este sitio web actúa como una tarjeta de presentación digital, proporcionando una visión integral de mi trayectoria, proyectos destacados y experiencia. Está especialmente dirigido a colegas de la industria y reclutadores, con el objetivo de conectar con profesionales afines y potenciales empleadores en el sector tecnológico.
                     </p>
-
-                    <figure className="bottom-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA DIBUJO DE BRAINSTORMING CON MUNEQUITA</div>
-                    </figure>
                 </article>
 
                 <article className="personal-website__block investigation">
@@ -49,8 +47,8 @@ const PersonalWebsite = () => {
                         Decidí no seguir la tendencia actual de diseños minimalistas y de una sola página con scroll continuo, ya que <span className="highlighted-text pink">quería que mi sitio reflejara mi personalidad y estilo únicos</span>. Me inspiré en las antiguas ventanas de los sistemas operativos <span className="highlighted-text pink">Windows de los 90s</span> y en elementos de <span className="highlighted-text pink">videojuegos vintage</span>, utilizando una <span className="highlighted-text pink">paleta de colores pastel</span>, especialmente en tonos rosados, que son mis favoritos. Además, quise incorporar imágenes relacionadas con la programación y, para mantener la cohesión visual, las creé utilizando CSS, destacando mi habilidad tanto en diseño como en desarrollo.
                     </p>
 
-                    <figure className="bottom-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA DIBUJO CSS</div>
+                    <figure className="bottom-img cssart">
+                        <img src={ CSSArtImg } alt="Ejemplos de arte CSS hecho para la web" />
                     </figure>
                 </article>
 
@@ -60,8 +58,8 @@ const PersonalWebsite = () => {
                         Con el fin de asegurar una experiencia de usuario fluida y coherente, elaboré un esquema visual detallado de la estructura de mi sitio web, destacando las páginas principales y sus secciones.
                     </p>
 
-                    <figure className="middle-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI IRIA LA IMAGEN: MAPA DEL SITIO (PAGINAS Y SECCIONES)</div>
+                    <figure className="middle-img sitemap">
+                        <img src={ SitemapImg } alt="Mapa de la web" />
                     </figure>
 
                     <p>

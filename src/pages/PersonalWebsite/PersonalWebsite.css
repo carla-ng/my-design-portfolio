@@ -43,19 +43,20 @@
                 }
 
                 &.top-img {
-                    margin-block-end: 2rem;
+                    margin-block-end: 4rem;
                 }
 
                 &.middle-img {
-                    margin-block-end: 2rem;
-                    margin-block-start: 2rem;
+                    margin-block-end: 4rem;
+                    margin-block-start: 4rem;
                 }
 
                 &.bottom-img {
-                    margin-block-start: 2rem;
+                    margin-block-start: 4rem;
                 }
 
-                &.moodboard { max-width: 700px; }
+                &.moodboard, &.sitemap { max-width: 700px; }
+                &.cssart { max-width: 300px; }
             }
 
             &.conclusions {
