@@ -36,7 +36,7 @@ const Home = () => {
 
                 <Card image={ ComponentSystemImage } title="Sistema de Componentes" description="En mi última empresa trabajé como desarrolladora web en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
 
-                <Card image={ ComingSoonImage } title="Diseño y Desarrollo de Mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="" additionalClass="comingsoon"  />
+                <Card image={ ComingSoonImage } title="Caso de Estudio: Diseño y Desarrollo de Mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="" additionalClass="comingsoon"  />
             </section>
             
         </div>

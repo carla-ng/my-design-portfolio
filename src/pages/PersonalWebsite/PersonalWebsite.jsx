@@ -4,6 +4,7 @@ import useFadeIn from '../../hooks/useFadeIn';
 import MoodBoardImg from '../../assets/images/personal-website/moodboard.jpg';
 import CSSArtImg from '../../assets/images/personal-website/cssart.jpg';
 import SitemapImg from '../../assets/images/personal-website/sitemap.jpg';
+import SketchesImg from '../../assets/images/personal-website/sketches.jpg';
 import LighthouseImg from '../../assets/images/personal-website/lighthouse.jpg';
 import ScreenshotsImg from '../../assets/images/personal-website/screenshots.jpg';
 
@@ -17,7 +18,7 @@ const PersonalWebsite = () => {
             <div className="introduction-outer-container">
                 <div className="introduction">
                     <h1 className="introduction__title">
-                        <span>Diseño y Desarrollo de mi Web Personal</span>
+                        <span>Caso de Estudio: Diseño y Desarrollo de mi Web Personal</span>
                     </h1>
                     <p className={`introduction__text ${fadeInClass}`}>
                         En esta página, te presento el caso de estudio detallado de la <span className="highlighted-text">creación de mi portafolio como desarrolladora web</span>. A través de este proyecto, no solo desarrollé una plataforma para mostrar mis habilidades técnicas, sino que también apliqué principios de diseño UX/UI para crear una experiencia de usuario intuitiva y visualmente atractiva. Descubre cómo abordé el proceso de diseño y desarrollo, los desafíos encontrados, y las soluciones implementadas para crear una presencia online efectiva y coherente.
@@ -107,8 +108,8 @@ const PersonalWebsite = () => {
                         Los <span className="highlighted-text green">bocetos iniciales</span> o <span className="highlighted-text green">sketches</span> representan las ideas crudas y la estructura básica de las páginas y elementos del sitio.
                     </p>
 
-                    <figure className="middle-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI VAN EJEMPLOS DE SKETCHES</div>
+                    <figure className="middle-img sketches">
+                        <img src={ SketchesImg } alt="Bocetos del diseño de la web" />
                     </figure>
 
                     <p>
