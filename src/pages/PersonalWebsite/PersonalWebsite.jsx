@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import './PersonalWebsite.css';
 import useFadeIn from '../../hooks/useFadeIn';
 
@@ -14,6 +16,12 @@ import ScreenshotsImg from '../../assets/images/personal-website/screenshots.jpg
 
 const PersonalWebsite = () => {
     const fadeInClass = useFadeIn()
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     return (
         <div id="personal-website" className="page">

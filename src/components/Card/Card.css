@@ -8,7 +8,11 @@
         flex: 0 0 50%;
     }
 
-    &.comingsoon { opacity: 0.3; }
+    &.comingsoon {
+        opacity: 0.3;
+
+        a { cursor: unset; }
+    }
 
     &.challenges {
         .card__img-container { background-color: #fba2ff; }
