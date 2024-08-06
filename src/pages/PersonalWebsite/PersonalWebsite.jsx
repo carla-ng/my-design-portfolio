@@ -24,9 +24,9 @@ const PersonalWebsite = () => {
 
 
     return (
-        <div id="personal-website" className="page">
+        <section id="personal-website" className="page">
 
-            <div className="introduction-outer-container">
+            <header className="introduction-outer-container">
                 <div className="introduction">
                     <h1 className="introduction__title">
                         <span>Caso de Estudio: Diseño y Desarrollo de mi Web Personal</span>
@@ -35,20 +35,20 @@ const PersonalWebsite = () => {
                         En esta página, te presento el caso de estudio detallado de la <span className="highlighted-text">creación de mi portafolio como desarrolladora web</span>. A través de este proyecto, no solo desarrollé una plataforma para mostrar mis habilidades técnicas, sino que también apliqué principios de diseño UX/UI para crear una experiencia de usuario intuitiva y visualmente atractiva. Descubre cómo abordé el proceso de diseño y desarrollo, los desafíos encontrados, y las soluciones implementadas para crear una presencia online efectiva y coherente.
                     </p>
                 </div>
-            </div>            
+            </header>            
 
             <section className={`personal-website-container ${fadeInClass}`}>
 
-                <article className="personal-website__block intro">
-                    <h4>Introducción y Contexto</h4>
+                <article className="personal-website__block intro" aria-labelledby="introduction-context">
+                    <h4 id="introduction-context">Introducción y Contexto</h4>
 
                     <p>
                         El propósito de crear este portafolio web fue establecer una presencia en línea sólida y profesional, que no sólo demostrara mis habilidades técnicas y creativas en desarrollo web y diseño UX/UI, sino que también me abriera puertas a nuevas oportunidades laborales. Este sitio web actúa como una tarjeta de presentación digital, proporcionando una visión integral de mi trayectoria, proyectos destacados y experiencia. Está especialmente dirigido a colegas de la industria y reclutadores, con el objetivo de conectar con profesionales afines y potenciales empleadores en el sector tecnológico.
                     </p>
                 </article>
 
-                <article className="personal-website__block investigation">
-                    <h4>Investigación y Análisis</h4>
+                <article className="personal-website__block investigation" aria-labelledby="research-analysis">
+                    <h4 id="research-analysis">Investigación y Análisis</h4>
                     <p>
                         Para diseñar y estructurar mi portafolio web, realicé un análisis exhaustivo de otros portafolios de desarrolladores y diseñadores. Este proceso de análisis competitivo me ayudó a identificar buenas prácticas y áreas de mejora, asegurando que mi portafolio fuera tanto funcional como atractivo.
                     </p>
@@ -66,8 +66,8 @@ const PersonalWebsite = () => {
                     </figure>
                 </article>
 
-                <article className="personal-website__block architecture">
-                    <h4>Arquitectura de Información y Navegación</h4>
+                <article className="personal-website__block architecture" aria-labelledby="architecture-info-navigation">
+                    <h4 id="architecture-info-navigation">Arquitectura de Información y Navegación</h4>
                     <p>
                         Con el fin de asegurar una experiencia de usuario fluida y coherente, elaboré un esquema visual detallado de la estructura de mi sitio web, destacando las páginas principales y sus secciones.
                     </p>
@@ -108,8 +108,8 @@ const PersonalWebsite = () => {
                     </p>
                 </article>
 
-                <article className="personal-website__block design">
-                    <h4>Proceso de Diseño</h4>
+                <article className="personal-website__block design" aria-labelledby="design-process">
+                    <h4 id="design-process">Proceso de Diseño</h4>
 
                     <p>
                         A través de las siguientes imágenes, podrás ver la evolución de las ideas y cómo cada etapa contribuyó a la creación del producto final.
@@ -148,16 +148,16 @@ const PersonalWebsite = () => {
                     </figure>
                 </article>
 
-                <article className="personal-website__block development">
-                    <h4>Desarrollo e Implementación</h4>
+                <article className="personal-website__block development" aria-labelledby="development-process">
+                    <h4 id="development-process">Desarrollo e Implementación</h4>
 
                     <p>
                         Utilicé diversas tecnologías y herramientas para garantizar un desarrollo eficiente y una experiencia de usuario óptima. El proyecto fue desarrollado principalmente con <span className="highlighted-text yellow">Vue 3</span> junto con <span className="highlighted-text yellow">JavaScript</span> y <span className="highlighted-text yellow">Webpack</span>, lo cual me permitió practicar y afianzar mis habilidades en este framework. Para el diseño y estilización, empleé <span className="highlighted-text yellow">SCSS</span>, lo que facilitó una gestión más organizada y modular de los estilos. Finalmente, desplegué el sitio en <span className="highlighted-text yellow">Netlify</span>, utilizando <span className="highlighted-text yellow">GitHub</span> como repositorio para el control de versiones. Netlify simplificó el proceso de hosting y permitió una fácil administración y despliegue automático de las nuevas versiones del proyecto directamente desde GitHub.
                     </p>
                 </article>
 
-                <article className="personal-website__block content">
-                    <h4>Contenido, SEO y Accesibilidad</h4>
+                <article className="personal-website__block content" aria-labelledby="content-seo-accessibility">
+                    <h4 id="content-seo-accessibility">Contenido, SEO y Accesibilidad</h4>
 
                     <p>
                         Durante la creación del contenido para mi sitio web, presté especial atención a la redacción clara y concisa de cada página. Las imágenes utilizadas fueron optimizadas y convertidas al formato .webp, lo que ofrece ventajas significativas en términos de velocidad de carga y eficiencia en el uso del ancho de banda, mejorando así la experiencia del usuario.
@@ -172,8 +172,8 @@ const PersonalWebsite = () => {
                     </p>
                 </article>
                 
-                <article className="personal-website__block tests">
-                    <h4>Pruebas y Retroalimentación</h4>
+                <article className="personal-website__block tests" aria-labelledby="tests-feedback">
+                    <h4 id="tests-feedback">Pruebas y Retroalimentación</h4>
                     <p>
                         Para asegurar la calidad y el rendimiento de mi sitio web, utilicé herramientas como <span className="highlighted-text yellow">Lighthouse</span> y <span className="highlighted-text yellow">BrowserStack</span> para realizar una serie de pruebas exhaustivas. Estas pruebas evaluaron aspectos clave como accesibilidad, rendimiento, SEO, y buenas prácticas generales, además de verificar la compatibilidad del sitio en diversos dispositivos y sistemas operativos. A partir de los resultados obtenidos, implementé una serie de mejoras recomendadas, optimizando la velocidad de carga, la accesibilidad y el posicionamiento en motores de búsqueda.
                     </p>
@@ -187,8 +187,8 @@ const PersonalWebsite = () => {
                     </p>
                 </article>
 
-                <article className="personal-website__block conclusions">
-                    <h4>
+                <article className="personal-website__block conclusions" aria-labelledby="conclusions">
+                    <h4 id="conclusions">
                         <span className="emoji">&#10024;</span>
                         Conclusión y Reflexión
                         <span className="emoji">&#10024;</span>
@@ -213,7 +213,7 @@ const PersonalWebsite = () => {
                     </p>
 
                     <button className="default" aria-label="Visitar web en vivo">
-                        <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visita la web">
                             Visita la web
                             <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
@@ -229,7 +229,7 @@ const PersonalWebsite = () => {
 
             </section>
 
-        </div>
+        </section>
     )
 };
 

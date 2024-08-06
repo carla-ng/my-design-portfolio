@@ -20,9 +20,9 @@ const Home = () => {
 
 
     return (
-        <div id="home" className="page">
+        <section id="home" className="page">
 
-            <div className="introduction">
+            <header className="introduction">
                 <h1 className="introduction__title">
                     <span>¡Hola!</span>
                     <span>Soy Carla Nardone</span>
@@ -30,7 +30,7 @@ const Home = () => {
                 <p className={`introduction__text ${fadeInClass}`}>
                     Después de trabajar como <span className="highlighted-text">Desarrolladora Web</span> durante años y colaborar estrechamente con Diseñadores, descubrí mi pasión por el <span className="highlighted-text">Diseño UX/UI</span>. Fue así como decidí explorar este campo para combinar mis habilidades técnicas y creativas{/*, ofreciendo experiencias de usuario excepcionales*/}. Aquí encontrarás algunos ejemplos de mis proyectos.
                 </p>
-            </div>
+            </header>
 
             <section className={`projects-container ${fadeInClass}`}>
                 <Card image={ ChallengesImage } title="Retos de Diseño UX/UI" description="Exploración de diversos retos en línea centrados en la creación de componentes y páginas web. Cada proyecto incluye el proceso completo: sketch, wireframe y mockup final, demostrando mi habilidad para transformar ideas en diseños funcionales y estéticamente atractivos." link="challenges" additionalClass="challenges" />
@@ -42,7 +42,7 @@ const Home = () => {
                 <Card image={ ComingSoonImage } title="Caso de Estudio: WebApp para Artistas" description="Proceso creativo y técnico detrás de una innovadora webapp diseñada para artistas que se dedican a la pintura y el dibujo. Esta plataforma incluirá información sobre eventos artísticos, un listado de tiendas de bellas artes, técnicas y consejos útiles, entre otros. Aprovechando un grupo local de artistas para investigación UX, me aseguraré de que la aplicación logre satisfacer las necesidades reales de la comunidad." link="" additionalClass="comingsoon"  />
             </section>
             
-        </div>
+        </section>
     );
 };
 

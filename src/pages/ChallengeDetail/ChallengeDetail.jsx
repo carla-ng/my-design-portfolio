@@ -21,7 +21,7 @@ const ChallengesDetail = () => {
 
     if ( !challenge ) {
         return (
-            <div id="challenge-detail" className="page">
+            <section id="challenge-detail" className="page">
                 <div style={{ margin: '6rem auto', padding: '0 1rem', textAlign: 'center' }}>Reto no encontrado</div>
 
                 <button className="go-back default" style={{ margin: '0 auto' }}>
@@ -29,19 +29,19 @@ const ChallengesDetail = () => {
                         <span>Volver a Retos</span>
                     </span>
                 </button>
-            </div>
+            </section>
         )
     }
 
 
     return (
-        <div id="challenge-detail" className="page">
+        <section id="challenge-detail" className="page">
 
-            <div className="introduction">
+            <header className="introduction">
                 <h1 className="introduction__title">
                     <span>{ challenge.title }</span>
                 </h1>
-            </div>
+            </header>
 
             <div className={`challenge-container ${fadeInClass}`}>
 
@@ -88,7 +88,7 @@ const ChallengesDetail = () => {
                     <span>Volver a Retos</span>
                 </span>
             </button>
-        </div>
+        </section>
     );
 };
 

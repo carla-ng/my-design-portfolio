@@ -19,16 +19,16 @@ const About = () => {
     }, [])
 
     return (
-        <div id="about" className="page">
+        <section id="about" className="page">
 
-            <div className="introduction">
+            <header className="introduction">
                 <h1 className="introduction__title">
                     <span>Quién Soy:</span>
                     <span>Ingeniera y Creativa</span>
                 </h1>
-            </div>
+            </header>
 
-            <div className="about-container">
+            <section className="about-container">
                 <p className={`about__text ${fadeInClass}`}>
                     Soy ingeniera informática especializada en desarrollo web, con un fuerte enfoque en frontend. Mi creatividad y pasión por el diseño visual me han llevado a trabajar estrechamente con diseñadores UX/UI a lo largo de mi carrera. Esta colaboración me hizo descubrir mi interés por el diseño de experiencias de usuario, y he aprendido mucho de mis colegas en el campo.
                 </p>
@@ -47,16 +47,16 @@ const About = () => {
                     Aquí puedes ver algunos de mis dibujos:
                 </p>
                 
-                <div className={`about__images ${fadeInClass}`}>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingOne})`}}></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFour})`}}></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingThree})`}}></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingTwo})`}}></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFive})`}}></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingSix})`}}></div>
-                </div>
-            </div>
-        </div>
+                <section className={`about__images ${fadeInClass}`} aria-label="Galería de dibujos">
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingOne})`}} role="img" aria-label="Dibujo de elfo"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFour})`}} role="img" aria-label="Dibujo de Pokemon Bulbasaur"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingThree})`}} role="img" aria-label="Dibujo de hada"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingTwo})`}} role="img" aria-label="Dibujo de bruja"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFive})`}} role="img" aria-label="Dibujo de sirena"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingSix})`}} role="img" aria-label="Dibujo de Daenerys Targaryen"></div>
+                </section>
+            </section>
+        </section>
     );
 };
 

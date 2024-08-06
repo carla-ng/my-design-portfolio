@@ -14,37 +14,47 @@ const Contact = () => {
     
 
     return (
-        <div id="contact" className="page">
+        <section id="contact" className="page">
 
-            <div className="introduction">
+            <header className="introduction">
                 <h1 className="introduction__title">
                     <span>Mis redes</span>
                 </h1>
-            </div>
+            </header>
 
-            <div className="contact-container">
+            <section className="contact-container">
                 <p>Si deseas contactar conmigo, me podrás encontrar en:</p>
 
-                <div>
-                    <a className={`contact__link linkedin ${fadeInClass}`} href="https://www.linkedin.com/in/carla-nardone-gonzalez/" target="_blank">
-                        Linkedin
-                    </a>
+                <nav aria-label="Mis redes sociales">
+                    <ul className="contact-list">
+                        <li>
+                            <a className={`contact__link linkedin ${fadeInClass}`} href="https://www.linkedin.com/in/carla-nardone-gonzalez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                Linkedin
+                            </a>
+                        </li>
 
-                    <a className={`contact__link github ${fadeInClass}`} href="https://github.com/carla-ng/" target="_blank">
-                        GitHub
-                    </a>
+                        <li>
+                            <a className={`contact__link github ${fadeInClass}`} href="https://github.com/carla-ng/" target="_blank" rel="noopener noreferrer"aria-label="GitHub">
+                                GitHub
+                            </a>
+                        </li>
 
-                    <a className={`contact__link instagram ${fadeInClass}`} href="https://www.instagram.com/carlanargon/" target="_blank">
-                        Instagram
-                    </a>
+                        <li>
+                            <a className={`contact__link instagram ${fadeInClass}`} href="https://www.instagram.com/carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="Instagram">
+                                Instagram
+                            </a>
+                        </li>
 
-                    <a className={`contact__link tiktok ${fadeInClass}`} href="https://www.tiktok.com/@carlanargon/" target="_blank">
-                        Tiktok
-                    </a>
-                </div>
+                        <li>
+                            <a className={`contact__link tiktok ${fadeInClass}`} href="https://www.tiktok.com/@carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="TikTok">
+                                Tiktok
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 
-            </div>
-        </div>
+            </section>
+        </section>
     );
 };
 
