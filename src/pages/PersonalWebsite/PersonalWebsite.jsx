@@ -7,6 +7,7 @@ import SitemapImg from '../../assets/images/personal-website/sitemap.jpg';
 import SketchesImg from '../../assets/images/personal-website/sketches.jpg';
 import WireframesImg from '../../assets/images/personal-website/wireframes.jpg';
 import MockupsImg from '../../assets/images/personal-website/mockups.jpg';
+import StyleGuideImg from '../../assets/images/personal-website/styleguide.jpg';
 import LighthouseImg from '../../assets/images/personal-website/lighthouse.jpg';
 import ScreenshotsImg from '../../assets/images/personal-website/screenshots.jpg';
 
@@ -129,12 +130,13 @@ const PersonalWebsite = () => {
                     <figure className="middle-img mockups">
                         <img src={ MockupsImg } alt="Mockups del diseño de la web" />
                     </figure>
+
                     <p>
                         Esta siguiente imagen propone una <span className="highlighted-text green">guía de estilo</span> que define la identidad visual del portafolio, incluyendo la paleta de colores, la tipografía y los elementos visuales inspirados en las ventanas de Windows de los 90s y videojuegos vintage. Esta sección refleja cómo estas elecciones se alinean con mi personalidad y la marca que deseo proyectar, lo que para mí ha sido una de las partes más importantes de este proyecto.
                     </p>
 
-                    <figure className="bottom-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI VA GUIA DE ESTILOS</div>
+                    <figure className="bottom-img styleguide">
+                        <img src={ StyleGuideImg } alt="Guia de estilos del diseño de la web" />
                     </figure>
                 </article>
 
