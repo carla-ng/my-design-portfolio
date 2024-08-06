@@ -43,7 +43,7 @@
                 }
                 &.bottom-img { margin-block-start: 4rem; }
 
-                &.moodboard, &.sitemap, &.sketches, &.wireframes { max-width: 700px; }
+                &.moodboard, &.sitemap, &.sketches, &.wireframes, &.mockups { max-width: 700px; }
                 &.lighthouse { max-width: 460px; }
                 &.cssart { max-width: 300px; }
             }
