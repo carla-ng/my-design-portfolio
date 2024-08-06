@@ -126,12 +126,6 @@
                 }
             }
 
-            &.variants, &.format {
-                @media ( max-width: 768px ) {
-                    
-                }
-            }
-
             &.learned {
                 background-color: rgb(238, 238, 238);
                 padding: 0.5rem 2rem;

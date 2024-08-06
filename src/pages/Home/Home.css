@@ -6,9 +6,7 @@
     .projects-container {
         margin-block-start: 5rem;
 
-        @media ( max-width: 768px ) {
-            margin: 5rem auto 0 auto;
-        }
+        @media ( max-width: 768px ) { margin: 5rem auto 0 auto; }
 
         @media ( min-width: 769px ) {
             display: flex;

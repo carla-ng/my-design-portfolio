@@ -10,9 +10,7 @@
             padding: 0 1rem;
         }
 
-        & > p {
-            max-width: 900px;
-        }
+        & > p { max-width: 900px; }
 
         & > nav {
             margin-block-start: 3rem;

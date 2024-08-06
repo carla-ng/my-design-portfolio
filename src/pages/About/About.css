@@ -14,17 +14,10 @@
     .about-container {
         margin-block-start: 3rem;
 
-        @media ( max-width: 768px ) {
-            margin: 3rem auto 0 auto;
-        }
+        @media ( max-width: 768px ) { margin: 3rem auto 0 auto; }
+        @media ( min-width: 769px ) { padding: 0 1rem; }
 
-        @media ( min-width: 769px ) {
-            padding: 0 1rem;
-        }
-
-        .about__text {
-            max-width: 900px;
-        }
+        .about__text { max-width: 900px; }
 
         .about__images {
             display: flex;
@@ -42,9 +35,7 @@
                 overflow: hidden;
                 width: 100%;            
                 
-                @media ( max-width: 575px ) {
-                    margin: 1rem auto;
-                }
+                @media ( max-width: 575px ) { margin: 1rem auto; }
 
                 @media ( min-width: 576px ) {
                     height: 320px;
