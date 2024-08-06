@@ -5,6 +5,7 @@ import MoodBoardImg from '../../assets/images/personal-website/moodboard.jpg';
 import CSSArtImg from '../../assets/images/personal-website/cssart.jpg';
 import SitemapImg from '../../assets/images/personal-website/sitemap.jpg';
 import SketchesImg from '../../assets/images/personal-website/sketches.jpg';
+import WireframesImg from '../../assets/images/personal-website/wireframes.jpg';
 import LighthouseImg from '../../assets/images/personal-website/lighthouse.jpg';
 import ScreenshotsImg from '../../assets/images/personal-website/screenshots.jpg';
 
@@ -116,8 +117,8 @@ const PersonalWebsite = () => {
                         Los <span className="highlighted-text green">wireframes</span> muestran una versión más detallada de la estructura del sitio, destacando la disposición y jerarquía de los elementos sin distracciones visuales.
                     </p>
 
-                    <figure className="middle-img">
-                        <div style={{backgroundColor: 'lightgrey', width: '300px', height: '300px'}}>AQUI VAN EJEMPLOS DE WIREFRAMES</div>
+                    <figure className="middle-img wireframes">
+                        <img src={ WireframesImg } alt="Wireframes del diseño de la web" />
                     </figure>
 
                     <p>
@@ -203,7 +204,7 @@ const PersonalWebsite = () => {
 
                     <button className="default" aria-label="Visitar web en vivo">
                         <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer">
-                            Visita mi web
+                            Visita la web
                             <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <g>

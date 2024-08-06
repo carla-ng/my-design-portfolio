@@ -34,31 +34,22 @@
                 margin-inline-start: auto;
                 margin-inline-end: auto;
 
-                img {
-                    width: 100%;
-                }
+                img { width: 100%; }
 
-                &.top-img {
-                    margin-block-end: 4rem;
-                }
-
+                &.top-img { margin-block-end: 4rem; }
                 &.middle-img {
                     margin-block-end: 4rem;
                     margin-block-start: 4rem;
                 }
+                &.bottom-img { margin-block-start: 4rem; }
 
-                &.bottom-img {
-                    margin-block-start: 4rem;
-                }
-
-                &.moodboard, &.sitemap, &.sketches { max-width: 700px; }
+                &.moodboard, &.sitemap, &.sketches, &.wireframes { max-width: 700px; }
                 &.lighthouse { max-width: 460px; }
                 &.cssart { max-width: 300px; }
             }
 
             &.intro {
                 h4, p { text-align: center; }
-                
                 @media ( min-width: 769px ) { margin: 8rem auto 0 auto; }
             }
 
