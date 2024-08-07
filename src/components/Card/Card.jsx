@@ -11,8 +11,8 @@ const Card = ({image, title, description, link, additionalClass, ariaHiddenValue
     }
 
     return (
-        <article className={ combinedClass } { ...accessibilityProps }>
-            <Link to={ pageLink }>
+        <article className={ combinedClass }>
+            <Link to={ pageLink } { ...accessibilityProps }>
                 <div className="card__img-container" style={{backgroundImage: `url(${image})`}}></div>
 
                 <h2 className="card__title">{ title }</h2>
