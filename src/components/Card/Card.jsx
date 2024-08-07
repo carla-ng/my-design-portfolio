@@ -1,16 +1,21 @@
 import './Card.css';
 import { Link } from 'react-router-dom';
 
-const Card = ({image, title, description, link, additionalClass}) => {
+const Card = ({image, title, description, link, additionalClass, ariaHiddenValue, roleValue}) => {
     const combinedClass = `card ${additionalClass ? additionalClass : ''}`.trim()
     const pageLink = `/${link}`
 
+    const accessibilityProps = {
+        ...(ariaHiddenValue ? { 'aria-hidden': ariaHiddenValue } : {}),
+        ...(roleValue ? { role: roleValue } : {}),
+    }
+
     return (
-        <article className={ combinedClass }>
+        <article className={ combinedClass } { ...accessibilityProps }>
             <Link to={ pageLink }>
                 <div className="card__img-container" style={{backgroundImage: `url(${image})`}}></div>
 
-                <h4 className="card__title">{ title }</h4>
+                <h2 className="card__title">{ title }</h2>
                 
                 <p className="card__description">{ description }</p>
             </Link>

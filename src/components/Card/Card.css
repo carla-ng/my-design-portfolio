@@ -10,8 +10,14 @@
 
     &.comingsoon {
         opacity: 0.3;
+        pointer-events: none;
+        user-select: none;
 
-        a { cursor: unset; }
+        a {
+            cursor: unset;
+            pointer-events: none;
+            user-select: none;
+        }
     }
 
     &.challenges {
