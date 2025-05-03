@@ -77,6 +77,15 @@
                                 background-color: #ff0050;
                             }
                         }
+
+                        &.artstation {
+                            color: #13aff0;
+                            border: 4px solid #13aff0;
+                            &:hover {
+                                color: #fff;
+                                background-color: #13aff0;
+                            }
+                        }
                     }
                 }
             }

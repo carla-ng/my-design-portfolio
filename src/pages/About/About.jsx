@@ -38,7 +38,7 @@ const About = () => {
                 </p>
  
                 <p className={`about__text ${fadeInClass}`}>
-                    Además de mi carrera profesional, tengo una gran afición por el dibujo y la pintura. Pronto comenzaré un Máster en Concept Art para profundizar en esta pasión. Participo activamente en varios grupos de dibujo en Madrid, donde resido actualmente, y he tenido la oportunidad de exhibir mi trabajo en exposiciones colectivas en centros culturales. Entre mis hobbies también se incluyen la lectura y los videojuegos, que me permiten explorar diferentes formas de narrativas visuales y diseño interactivo. Estoy entusiasmada por continuar mi desarrollo en el diseño UX/UI y combinar mis habilidades técnicas y creativas para crear experiencias de usuario excepcionales.
+                    Además de mi carrera profesional, tengo una gran afición por el dibujo y la pintura. Actualmente estoy cursando un Máster en Concept Art para profundizar en esta pasión. Participo activamente en varios grupos de dibujo en Madrid, donde resido actualmente, y he tenido la oportunidad de exhibir mi trabajo en exposiciones colectivas en centros culturales. Entre mis hobbies también se incluyen la lectura y los videojuegos, que me permiten explorar diferentes formas de narrativas visuales y diseño interactivo. Estoy entusiasmada por continuar mi desarrollo en el diseño UX/UI y combinar mis habilidades técnicas y creativas para crear experiencias de usuario excepcionales.
                 </p>
 
                 <br/>
@@ -52,7 +52,7 @@ const About = () => {
                     <div className="about__images-img" style={{backgroundImage: `url(${DrawingFour})`}} role="img" aria-label="Dibujo de Pokemon Bulbasaur"></div>
                     <div className="about__images-img" style={{backgroundImage: `url(${DrawingThree})`}} role="img" aria-label="Dibujo de hada"></div>
                     <div className="about__images-img" style={{backgroundImage: `url(${DrawingTwo})`}} role="img" aria-label="Dibujo de bruja"></div>
-                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFive})`}} role="img" aria-label="Dibujo de sirena"></div>
+                    <div className="about__images-img" style={{backgroundImage: `url(${DrawingFive})`}} role="img" aria-label="Dibujo de ama de llaves"></div>
                     <div className="about__images-img" style={{backgroundImage: `url(${DrawingSix})`}} role="img" aria-label="Dibujo de Daenerys Targaryen"></div>
                 </section>
             </section>

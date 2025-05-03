@@ -46,8 +46,8 @@ const Contact = () => {
                         </li>
 
                         <li>
-                            <a className={`contact__link tiktok ${fadeInClass}`} href="https://www.tiktok.com/@carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="TikTok">
-                                Tiktok
+                            <a className={`contact__link artstation ${fadeInClass}`} href="https://www.artstation.com/carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="ArtStation">
+                                ArtStation
                             </a>
                         </li>
                     </ul>

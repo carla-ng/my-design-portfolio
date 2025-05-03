@@ -11,8 +11,8 @@ const Footer = () => {
         <>
             <ScrollToTopButton />
 
-            <footer id="footer"  className={ fadeInClass }>
-                <a className="footer__text" href="https://github.com/carla-ng">Diseñado y desarrollado por Carla Nardone</a>
+            <footer id="footer" className={ fadeInClass }>
+                <span className="footer__text">Diseñado y desarrollado por Carla Nardone</span>
             </footer>
         </>
     )

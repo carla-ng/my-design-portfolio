@@ -39,7 +39,10 @@ const Home = () => {
 
                 <Card image={ PersonalWebsiteImage } title="Caso de Estudio: Diseño y Desarrollo de mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="personal-website" />
 
+                {/*
                 <Card image={ ComingSoonImage } title="Caso de Estudio: WebApp para Artistas" description="Proceso creativo y técnico detrás de una innovadora webapp diseñada para artistas que se dedican a la pintura y el dibujo. Esta plataforma incluirá información sobre eventos artísticos, un listado de tiendas de bellas artes, técnicas y consejos útiles, entre otros. Aprovechando un grupo local de artistas para investigación UX, me aseguraré de que la aplicación logre satisfacer las necesidades reales de la comunidad." link="" additionalClass="comingsoon" ariaHiddenValue="true" roleValue="presentation" />
+                */}
+                
             </section>
             
         </section>
