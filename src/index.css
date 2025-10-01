@@ -137,7 +137,7 @@ body {
             font-weight: 500;
             padding: 0.1rem 0.3rem;
 
-            &.blue, &.pink, &.green, &.yellow {
+            &.blue, &.pink, &.green, &.yellow, &.grey {
                 color: #000;
                 font-weight: 600;
             }
@@ -146,6 +146,7 @@ body {
             &.pink { background-color: #ffc4e4; }
             &.green { background-color: #c7ffd9; }
             &.yellow { background-color: #fff5c1; }
+            &.grey { background-color: #e3e3e3; }
         }
 
         .external-link-section {

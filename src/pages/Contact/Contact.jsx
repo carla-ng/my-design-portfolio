@@ -33,11 +33,13 @@ const Contact = () => {
                             </a>
                         </li>
 
+                        {/*
                         <li>
                             <a className={`contact__link github ${fadeInClass}`} href="https://github.com/carla-ng/" target="_blank" rel="noopener noreferrer"aria-label="GitHub">
                                 GitHub
                             </a>
                         </li>
+                        */}
 
                         <li>
                             <a className={`contact__link instagram ${fadeInClass}`} href="https://www.instagram.com/carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="Instagram">

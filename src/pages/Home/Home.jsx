@@ -1,9 +1,10 @@
 import './Home.css';
 
-import ComingSoonImage from '../../assets/images/home/comingsoon_thumbnail.jpg';
+/*import ComingSoonImage from '../../assets/images/home/comingsoon_thumbnail.jpg';*/
 import ChallengesImage from '../../assets/images/home/challenges_thumbnail.png';
 import ComponentSystemImage from '../../assets/images/home/component-system_thumbnail.png';
 import PersonalWebsiteImage from '../../assets/images/home/personal-website_thumbnail.png';
+import UIImage from '../../assets/images/home/ui_thumbnail.jpg';
 
 import { useEffect } from 'react';
 import useFadeIn from '../../hooks/useFadeIn';
@@ -42,6 +43,8 @@ const Home = () => {
                 {/*
                 <Card image={ ComingSoonImage } title="Caso de Estudio: WebApp para Artistas" description="Proceso creativo y técnico detrás de una innovadora webapp diseñada para artistas que se dedican a la pintura y el dibujo. Esta plataforma incluirá información sobre eventos artísticos, un listado de tiendas de bellas artes, técnicas y consejos útiles, entre otros. Aprovechando un grupo local de artistas para investigación UX, me aseguraré de que la aplicación logre satisfacer las necesidades reales de la comunidad." link="" additionalClass="comingsoon" ariaHiddenValue="true" roleValue="presentation" />
                 */}
+
+                <Card image={ UIImage } title="Diseño de Interfaz de Videojuego" description="Como parte de un proyecto colaborativo en mi Máster en Concept Art, trabajé en el diseño de una pequeña interfaz para el videojuego ficticio &quot;When the Night Falls&quot;. Esta tarea formó parte del desarrollo de concept art, donde buscamos alinear la experiencia del usuario con la narrativa y estética del juego." link="videogame-interface" />
                 
             </section>
             

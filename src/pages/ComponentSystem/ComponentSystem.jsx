@@ -54,7 +54,7 @@ const ComponentSystem = () => {
 
                         <article>
                             <h4>Equipos involucrados</h4>
-                            <p>Product Owner, Desarrolladores (mi rol), Diseñadores UX/UI, QA Testers</p>
+                            <p>Product Owner, Desarrolladores, Diseñadores UX/UI, QA Testers</p>
                         </article>
                     </div>                    
                 </div>

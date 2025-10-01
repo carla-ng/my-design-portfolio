@@ -8,6 +8,7 @@ import Challenges from './pages/Challenges/Challenges';
 import ComponentSystem from './pages/ComponentSystem/ComponentSystem';
 import ChallengeDetail from './pages/ChallengeDetail/ChallengeDetail';
 import PersonalWebsite from './pages/PersonalWebsite/PersonalWebsite';
+import VideogameInterface from './pages/VideogameInterface/VideogameInterface';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/challenges/:challengeId" element={<ChallengeDetail />} />
                 <Route path="/component-system" element={<ComponentSystem />} />
                 <Route path="/personal-website" element={<PersonalWebsite />} />
+                <Route path="/videogame-interface" element={<VideogameInterface />} />
             </Routes>
         </Layout>
     );
