@@ -35,23 +35,30 @@ const Contact = () => {
 
                         {/*
                         <li>
-                            <a className={`contact__link github ${fadeInClass}`} href="https://github.com/carla-ng/" target="_blank" rel="noopener noreferrer"aria-label="GitHub">
+                            <a className={`contact__link github ${fadeInClass}`} href="https://github.com/carla-ng/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 GitHub
                             </a>
                         </li>
                         */}
 
                         <li>
-                            <a className={`contact__link instagram ${fadeInClass}`} href="https://www.instagram.com/carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="Instagram">
+                            <a className={`contact__link instagram ${fadeInClass}`} href="https://www.instagram.com/carlanargon/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                 Instagram
                             </a>
                         </li>
 
                         <li>
-                            <a className={`contact__link artstation ${fadeInClass}`} href="https://www.artstation.com/carlanargon/" target="_blank" rel="noopener noreferrer"aria-label="ArtStation">
+                            <a className={`contact__link tiktok ${fadeInClass}`} href="https://www.tiktok.com/@carlanargon/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                TikTok
+                            </a>
+                        </li>
+
+                        <li>
+                            <a className={`contact__link artstation ${fadeInClass}`} href="https://www.artstation.com/carlanargon/" target="_blank" rel="noopener noreferrer" aria-label="ArtStation">
                                 ArtStation
                             </a>
                         </li>
+                        
                     </ul>
                 </nav>
                 
