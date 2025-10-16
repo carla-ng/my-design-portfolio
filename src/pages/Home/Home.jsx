@@ -29,7 +29,7 @@ const Home = () => {
                     <span>Soy Carla Nardone</span>
                 </h1>
                 <p className={`introduction__text ${fadeInClass}`}>
-                    Después de trabajar como <span className="highlighted-text">Desarrolladora Web</span> durante años y colaborar estrechamente con Diseñadores, descubrí mi pasión por el <span className="highlighted-text">Diseño UX/UI</span>. Fue así como decidí explorar este campo para combinar mis habilidades técnicas y creativas{/*, ofreciendo experiencias de usuario excepcionales*/}. Aquí encontrarás algunos ejemplos de mis proyectos.
+                    Después de trabajar durante varios años como <span className="highlighted-text">Desarrolladora Web</span> y colaborar de cerca con equipos de <span className="highlighted-text">Diseño</span>, descubrí mi pasión por esta área. Decidí entonces dar el paso y profundizar en ella, combinando mis habilidades técnicas con mi lado más creativo. Aquí encontrarás algunos ejemplos de mis proyectos.
                 </p>
             </header>
 

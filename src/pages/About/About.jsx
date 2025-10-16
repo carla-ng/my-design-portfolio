@@ -34,11 +34,11 @@ const About = () => {
                 </p>
 
                 <p className={`about__text ${fadeInClass}`}>
-                    Desde mis días en la universidad, siempre <strong>asumí la responsabilidad de diseñar</strong> cuando era necesario, lo que me permitió desarrollar habilidades que he aplicado en mi trayectoria profesional. En mi último trabajo, tuve la oportunidad de <strong>crear algunos diseños cuando el equipo lo requería</strong>, lo cual reafirmó mi deseo de seguir creciendo en esta área.
+                    Desde mis días en la universidad, siempre <strong>asumí la parte visual</strong> cuando era necesario, lo que me llevó a fortalecer mis habilidades de diseño y aplicarlas en mi trabajo. En mi última etapa profesional, tuve la oportunidad de <strong>crear algunos diseños, y colaborar en la validación de interfaces</strong>, lo que reafirmó mi deseo de seguir creciendo en el ámbito del diseño digital.
                 </p>
  
                 <p className={`about__text ${fadeInClass}`}>
-                    Además de mi carrera profesional, tengo una gran <strong>afición por el dibujo y la pintura</strong>. Recientemente he completado un <strong>Máster en Concept Art</strong> para profundizar en esta pasión. También participo en varios grupos de dibujo en Madrid, donde resido actualmente, y he tenido la oportunidad de exhibir mi trabajo en exposiciones colectivas en centros culturales. Entre mis hobbies también se incluyen la lectura y los videojuegos, que me permiten explorar diferentes formas de narrativas visuales y diseño interactivo. Estoy entusiasmada por continuar mi desarrollo en el diseño UX/UI y combinar mis habilidades técnicas y creativas para crear experiencias de usuario excepcionales.
+                    Además de mi carrera profesional, tengo una gran <strong>afición por el dibujo y la pintura</strong>. Recientemente completé un <strong>Máster en Concept Art</strong> para profundizar en mi lado más artístico. También participo en grupos de dibujo en Madrid, donde resido actualmente, y he tenido la oportunidad de exhibir mi trabajo en exposiciones colectivas en centros culturales. Entre mis hobbies también se incluyen la lectura y los videojuegos, que me permiten explorar diferentes formas de narrativas visuales y diseño interactivo. Estoy entusiasmada por seguir desarrollándome en el mundo del diseño y combinar mis habilidades técnicas y creativas para crear experiencias visuales cuidadas y significativas.
                 </p>
 
                 <br/>
