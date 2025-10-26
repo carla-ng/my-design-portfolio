@@ -116,8 +116,8 @@ const VideogameInterface = () => {
                     </p>
 
                     <button className="default" aria-label="Visitar web en vivo">
-                        <a className="default__text" href="https://www.artstation.com/artwork/mAKRN8" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto en ArtStation">
-                            Ver proyecto en ArtStation
+                        <a className="default__text" href="https://www.artstation.com/artwork/mAKRN8" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto completo en ArtStation">
+                            Ver proyecto completo
                             <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <g>
