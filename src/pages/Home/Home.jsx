@@ -34,7 +34,7 @@ const Home = () => {
             </header>
 
             <section className={`projects-container ${fadeInClass}`}>
-                <Card image={ ComponentSystemImage } title="Sistema de Componentes" description="En mi última empresa trabajé como desarrolladora web y ocasional diseñadora UX/UI en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI: guiando, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
+                <Card image={ ComponentSystemImage } title="Diseño de Sistema de Componentes" description="En mi última empresa trabajé como desarrolladora web y ocasional diseñadora UX/UI en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI: guiando, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
 
                 <Card image={ ChallengesImage } title="Retos de Diseño UX/UI" description="Exploración de diversos retos en línea centrados en la creación de componentes y páginas web. Cada proyecto incluye el proceso completo: sketch, wireframe y mockup final, demostrando mi habilidad para transformar ideas en diseños funcionales y estéticamente atractivos." link="challenges" additionalClass="challenges" />
 

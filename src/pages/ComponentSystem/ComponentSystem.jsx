@@ -1,5 +1,7 @@
 import './ComponentSystem.css';
 
+import VariantsImage from '../../assets/images/system/variants.jpg';
+import SummaryImage from '../../assets/images/system/summary.jpg';
 import ColumnsImage from '../../assets/images/system/columns.jpg';
 import SkinsImage from '../../assets/images/system/skins.jpg';
 import ComponentsImage from '../../assets/images/system/components.png';
@@ -23,10 +25,15 @@ const ComponentSystem = () => {
             <header className="introduction-outer-container">
                 <div className="introduction">
                     <h1 className="introduction__title">
-                        <span>Sistema de Componentes</span>
+                        <span>Diseño de Sistema de Componentes</span>
                     </h1>
+
                     <p className={`introduction__text ${fadeInClass}`}>
-                        Como desarrolladora web, fui parte integral de un proyecto para crear un sistema de componentes y portales para nuestra plataforma. Colaboré estrechamente con el equipo de diseño UX/UI, proporcionando ideas, feedback técnico, respondiendo consultas y asegurando que los diseños fueran implementables y accesibles. Además, tuve la oportunidad de diseñar componentes y páginas adicionales según las necesidades del proyecto.
+                        Un proyecto interno para rediseñar y escalar el sistema de componentes y portales de la empresa.
+                    </p>
+
+                    <p className={`introduction__text ${fadeInClass}`}>
+                        Colaboré estrechamente con el equipo de diseño UX/UI, proporcionando ideas, feedback técnico, respondiendo consultas y asegurando que los diseños fueran implementables y accesibles. Además, tuve la oportunidad de diseñar componentes y páginas adicionales según las necesidades del proyecto.
                     </p>
                 </div>
             </header>
@@ -56,7 +63,11 @@ const ComponentSystem = () => {
                             <h4>Equipos involucrados</h4>
                             <p>Product Owner, Desarrolladores, Diseñadores UX/UI, QA Testers</p>
                         </article>
-                    </div>                    
+                    </div>
+
+                    <figure>
+                        <img src={ SummaryImage } alt="Flujo de colaboracion entre equipos" />
+                    </figure>
                 </div>
 
                 <section className="component-system__info columns" aria-labelledby="columns-title">
@@ -70,20 +81,23 @@ const ComponentSystem = () => {
                 </section>                
 
                 <section className="component-system__info variants" aria-labelledby="variants-title">
+                    <figure>
+                        <img src={ VariantsImage } alt="Ejemplos de variantes" />
+                    </figure>
                     <div>
                         <h4 id="variants-title">Variantes y prioridades</h4>
-                        <p>Se realizaron diversas pruebas para determinar cómo diseñar los componentes con mayor flexibilidad. Finalmente, se decidió que cada componente podría tener múltiples variantes, permitiendo diferentes &quot;versiones&quot; de un mismo componente. Estas variantes podrían diferir en CSS o incluso en aspectos más importantes de la estructura HTML. Además, se establecieron &quot;prioridades&quot; para los componentes, lo que facilita que en una misma página un componente pueda aparecer en una versión más grande (con mayor prioridad) y en una versión más pequeña (con menor prioridad), optimizando así la adaptabilidad y el diseño responsivo.</p>
+                        <p>Se realizaron diversas pruebas para determinar cómo diseñar los componentes con mayor flexibilidad. Finalmente, se decidió que cada componente podría tener múltiples variantes, permitiendo diferentes &quot;versiones&quot; de un mismo componente. Estas variantes podrían diferir en CSS o incluso en aspectos más importantes de la estructura HTML. Además, se establecieron &quot;prioridades&quot; para los componentes, lo que facilita que en una misma página un componente pueda aparecer en una versión más grande (con mayor prioridad) y en una versión más pequeña (con menor prioridad), optimizando así la adaptabilidad y el diseño responsive.</p>
                     </div>
                 </section>
 
                 <section className="component-system__info skins" aria-labelledby="skins-title">
-                    <figure>
-                        <img src={ SkinsImage } alt="Ejemplo de codigo CSS de un skin" />
-                    </figure>
                     <div>
                         <h4 id="skins-title">Skins</h4>
                         <p>Para proporcionar flexibilidad y variedad a los componentes y portales, se implementó el concepto de &quot;skins&quot;. Un skin es un archivo CSS que define variables para colores, tipografías y otras características visuales del portal. Aunque esta funcionalidad ya existía en el sistema anterior, se decidió mantenerla y mejorarla, ofreciendo una mayor definición y personalización para los portales.</p>
                     </div>
+                    <figure>
+                        <img src={ SkinsImage } alt="Ejemplo de codigo CSS de un skin" />
+                    </figure>
                 </section>
 
                 <section className="component-system__info format" aria-labelledby="format-title">
@@ -109,7 +123,7 @@ const ComponentSystem = () => {
                 <section className="component-system__info maintenance" aria-labelledby="maintenance-title">
                     <div>
                         <h4 id="maintenance-title">Mantenimiento y obstáculos</h4>
-                        <p>Tras la creación del sistema, el equipo de diseño UX/UI se desintegró temporalmente, lo que llevó a algunos desarrolladores, yo incluida, a asumir la responsabilidad de diseñar y desarrollar una serie de componentes y páginas según las necesidades de la empresa. Posteriormente, se integró un nuevo equipo de diseñadores UX/UI junior, quienes requirieron de nuestro apoyo y supervisión para crear los diseños de componentes y portales, que luego nosotros validábamos. En particular, desempeñé un papel clave en este proceso, ya que fui promovida a la posición de responsable del sistema de componentes y portales dentro del equipo de desarrollo.</p>
+                        <p>Tras la creación del sistema, el equipo de diseño UX/UI se desintegró temporalmente, lo que llevó a algunos desarrolladores, yo incluida, a asumir la responsabilidad de diseñar y desarrollar una serie de componentes y páginas según las necesidades de la empresa. Posteriormente, se integró un nuevo equipo de diseñadores UX/UI junior, quienes requirieron de nuestro apoyo y supervisión para crear los diseños de componentes y portales, que luego nosotros validábamos. En esta etapa, desempeñé el rol de responsable del sistema de componentes y portales dentro del equipo de desarrollo.</p>
                     </div>
                 </section>
 
