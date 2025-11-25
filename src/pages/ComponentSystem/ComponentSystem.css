@@ -2,6 +2,24 @@
 #component-system {
     padding: 1rem 0;
 
+    ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        list-style-position: inside;
+        margin-block-start: 3rem;
+        padding: 1.5rem 1rem;
+
+        & > li {
+            font-size: 1.05rem;
+            font-weight: 400;
+            line-height: 1.4;
+            text-align: center;
+        }
+    }
+
     .introduction-outer-container {
         margin: 0 auto;
         padding: 0 1rem;
@@ -25,7 +43,7 @@
             }
 
             @media ( min-width: 769px ) {
-                margin: 0 auto 9rem auto;
+                margin: 0 auto 6rem auto;
                 max-width: 1200px;
             }
 
@@ -69,20 +87,6 @@
                     }
                 }
             } 
-
-            figure {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-
-                margin: 4rem auto 0 auto;
-
-                img {
-                    @media ( max-width: 768px ) { width: 100%; }
-                    @media ( min-width: 769px ) { width: 70%; }
-                }
-            }
         }
 
         .component-system__info {
@@ -100,6 +104,7 @@
 
             &.columns, &.skins, &.variants {
                 display: flex;
+                align-items: center;
                 flex-direction: column;
                 gap: 1rem;
 
@@ -169,8 +174,23 @@
             &.maintenance {
                 @media ( max-width: 768px ) { margin-block-start: 4rem; }
 
-                h4 { text-align: center; }
-                p { text-align: center; }
+                div {
+                    h4, p { text-align: center; }
+                }
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    margin: 4rem auto;
+
+                    img {
+                        @media ( max-width: 768px ) { width: 100%; }
+                        @media ( min-width: 769px ) { width: 70%; }
+                    }
+                }
             }
         }
 
