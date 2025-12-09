@@ -9,6 +9,7 @@ import ComponentSystem from './pages/ComponentSystem/ComponentSystem';
 import ChallengeDetail from './pages/ChallengeDetail/ChallengeDetail';
 import PersonalWebsite from './pages/PersonalWebsite/PersonalWebsite';
 import VideogameInterface from './pages/VideogameInterface/VideogameInterface';
+import WebtoonRedesign from './pages/WebtoonRedesign/WebtoonRedesign';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path="/component-system" element={<ComponentSystem />} />
                 <Route path="/personal-website" element={<PersonalWebsite />} />
                 <Route path="/videogame-interface" element={<VideogameInterface />} />
+                <Route path="/webtoon-redesign" element={<WebtoonRedesign />} />
             </Routes>
         </Layout>
     );
