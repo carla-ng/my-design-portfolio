@@ -1,3 +1,7 @@
+:root { 
+    --webtoon-main-color: #00dc64;
+}
+
 #webtoon-redesign {
     padding: 1rem 0;
 
@@ -25,7 +29,10 @@
                 max-width: 1200px;
             }
 
-            h2, h4 { letter-spacing: 2px; }
+            h2, h4 {
+                color: var(--webtoon-main-color);
+                letter-spacing: 2px;
+            }
 
             figure {
                 display: flex;
@@ -68,6 +75,38 @@
             &.external-link-section {
                 p { max-width: 900px; }
             }
+
+            &.overview {
+                #overview-card__container {
+                    background-color: #dbfae9;
+                    border-radius: 12px;
+                    padding: 24px;
+
+                    display: grid;
+                    grid-template-columns: 1fr 1.2fr;
+                    gap: 24px;
+
+                    @media (max-width: 768px) { grid-template-columns: 1fr; }
+
+                    #overview-card__list,
+                    #overview-card__motivation {
+                        p {
+                            font-size: 1rem;
+                            margin-bottom: 12px;
+                        }
+                    }  
+                }
+            }
+
+            .temp {
+                background-color: #ebebeb;
+                border-radius: 12px;
+                margin-block-start: 5rem;
+                padding: 24px;
+
+                .title, .text { text-align: center;}
+            }
+
         }
 
         .videogame-interface__image {

@@ -41,8 +41,29 @@ const WebtoonRedesign = () => {
 
             <section className={`webtoon-redesign-container ${fadeInClass}`}>
 
-                <article className="webtoon-redesign__block intro" aria-labelledby="introduction-context">
-                    <h4 id="introduction-context">Áreas de enfoque del rediseño</h4>
+                <article className="webtoon-redesign__block overview" aria-labelledby="overview-card">
+                    <h4 id="overview-card">Ficha del proyecto</h4>
+
+                    <div id="overview-card__container">
+                        <div id="overview-card__list">
+                            <p><b>Tipo de proyecto:</b> Proyecto personal (<i>en proceso</i>)</p>
+                            <p><b>Rol:</b> UX/UI Designer</p>
+                            <p><b>Año:</b> 2026</p>
+                            <p><b>Metodología:</b> Doble Diamante</p>
+                            <p><b>Alcance:</b> Rediseño UX/UI focalizado (Home, navegación, biblioteca del usuario y página de un webtoon).</p>
+                        </div>
+
+                        <div id="overview-card__motivation">
+                            <p><b>Motivación</b></p>
+                            <p>
+                                Elegí Webtoon como caso de estudio porque, como usuaria habitual, he experimentado directamente las limitaciones de la app actual y vi una oportunidad ideal para proponer una experiencia más clara, personalizada y centrada en el usuario.
+                            </p>
+                        </div>
+                    </div>                    
+                </article>
+
+                <article className="webtoon-redesign__block planning" aria-labelledby="redesign-planning">
+                    <h4 id="redesign-planning">Áreas de enfoque del rediseño</h4>
 
                     <p>
                         El proyecto se centra en cuatro áreas fundamentales:
@@ -55,15 +76,17 @@ const WebtoonRedesign = () => {
                         <li><b>Página principal de un webtoon:</b> información dispersa y navegación entre episodios mejorable.</li>
                     </ul>
 
-                    <p>Además, según la evolución del proyecto, incluiré mejoras adicionales en áreas como la sección de <b>comentarios</b> o la <b>página de búsqueda</b>, que también presentan oportunidades claras de optimización.</p>
+                    <p>
+                        Además, según la evolución del proyecto, incluiré mejoras adicionales en áreas como la sección de <b>comentarios</b> o la <b>página de búsqueda</b>, que también presentan oportunidades claras de optimización.
+                    </p>
 
-                    <p>Este es un proyecto <b>personal</b>, desarrollado siguiendo el marco del <b>Doble Diamante</b>, con fases de investigación, análisis heurístico, definición del problema, ideación, wireframing y diseño UI final. A lo largo del case study expongo las decisiones de diseño, los problemas detectados y las soluciones planteadas, combinando una perspectiva tanto <b>UX</b> como <b>UI</b>.</p>
+                    <div className="temp">
+                        <p className="title"><b>PROYECTO EN PROCESO</b></p>
 
-                    <ul>
-                        <li><b>Rol:</b> UX/UI Designer — Research, análisis heurístico, definición del problema, ideación, arquitectura de información, flujos, wireframes, diseño visual y prototipo.</li>
-                        <li><b>Tipo de proyecto:</b> Proyecto personal (en proceso).</li>
-                        <li><b>Motivación:</b> Elegí Webtoon como caso de estudio porque, como usuaria habitual, he experimentado directamente las limitaciones de la app actual y vi una oportunidad ideal para proponer una experiencia más clara, personalizada y centrada en el usuario.</li>
-                    </ul>
+                        <p className="text">
+                            Este es un proyecto <b>personal</b>, con fases de investigación, análisis heurístico, definición del problema, ideación, wireframing y diseño UI final. A lo largo del case study expongo las decisiones de diseño, los problemas detectados y las soluciones planteadas, combinando una perspectiva tanto <b>UX</b> como <b>UI</b>.
+                        </p>
+                    </div>
                 </article>
 
             {/*
