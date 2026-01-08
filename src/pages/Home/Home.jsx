@@ -1,9 +1,10 @@
 import './Home.css';
 
-import ComingSoonImage from '../../assets/images/home/comingsoon_thumbnail.jpg';
+/*import ComingSoonImage from '../../assets/images/home/comingsoon_thumbnail.jpg';*/
 import ChallengesImage from '../../assets/images/home/challenges_thumbnail.png';
 import ComponentSystemImage from '../../assets/images/home/component-system_thumbnail.png';
 import PersonalWebsiteImage from '../../assets/images/home/personal-website_thumbnail.png';
+import WebtoonRedesignImage from '../../assets/images/home/webtoon-redesign_thumbnail.png';
 import UIImage from '../../assets/images/home/ui_thumbnail.jpg';
 
 import { useEffect } from 'react';
@@ -37,7 +38,7 @@ const Home = () => {
                 <Card image={ ComponentSystemImage } title="Diseño de Sistema de Componentes" description="En mi última empresa trabajé como desarrolladora web y ocasional diseñadora UX/UI en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI: guiando, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
 
                 {
-                <Card image={ ComingSoonImage } title="Caso de Estudio: Rediseño UX/UI de la app de Webtoon" description="Centrado en mejorar la navegación, la home, la biblioteca del usuario y la experiencia de descubrimiento y lectura. Un proyecto de rediseño enfocado en resolver problemas reales de usabilidad y aportar nuevas funcionalidades orientadas al usuario." link="" additionalClass="comingsoon" ariaHiddenValue="true" roleValue="presentation" />
+                <Card image={ WebtoonRedesignImage } title="Caso de Estudio: Rediseño UX/UI de la app de Webtoon" description="Centrado en mejorar la navegación, la home, la biblioteca del usuario y la experiencia de descubrimiento y lectura. Un proyecto de rediseño enfocado en resolver problemas reales de usabilidad y aportar nuevas funcionalidades orientadas al usuario." link="webtoon-redesign" ariaHiddenValue="true" roleValue="presentation" />
                 }
 
                 <Card image={ PersonalWebsiteImage } title="Caso de Estudio: Diseño y Desarrollo de mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="personal-website" />

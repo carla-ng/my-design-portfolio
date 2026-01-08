@@ -50,7 +50,7 @@ const WebtoonRedesign = () => {
                             <p><b>Rol:</b> UX/UI Designer</p>
                             <p><b>Año:</b> 2026</p>
                             <p><b>Metodología:</b> Doble Diamante</p>
-                            <p><b>Alcance:</b> Rediseño UX/UI focalizado (Home, navegación, biblioteca del usuario y página de un webtoon).</p>
+                            <p><b>Alcance:</b> Rediseño UX/UI focalizado (Home, navegación, biblioteca del usuario y página de un webtoon)</p>
                         </div>
 
                         <div id="overview-card__motivation">
