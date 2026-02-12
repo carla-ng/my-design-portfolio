@@ -34,6 +34,7 @@ body {
 
         button {
             border: unset;
+            font-family: "Montserrat", sans-serif;
 
             a {
                 display: block;

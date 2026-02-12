@@ -1,24 +1,40 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import './WebtoonRedesign.css';
 import useFadeIn from '../../hooks/useFadeIn';
 
-import ReferencesImg from '../../assets/images/videogame-interface/references.jpg';
-import UIImg01 from '../../assets/images/videogame-interface/ui01.jpg';
-import UIImg02 from '../../assets/images/videogame-interface/ui02.jpg';
-import UIImg03 from '../../assets/images/videogame-interface/ui03.jpg';
-import UIVideoPreview from '../../assets/images/videogame-interface/uivideoPreview.jpg';
-import UIVideo from '../../assets/images/videogame-interface/uivideo.mp4';
-import FinalImg from '../../assets/images/videogame-interface/finalImg.jpg';
+import HomeAnalysis from '../../assets/images/webtoon-redesign/webtoon-home_analysis.jpg';
 
 
 const WebtoonRedesign = () => {
     const fadeInClass = useFadeIn()
+    const previousScrollRef = useRef(0)
+    const wrapperRef = useRef(null)
+    const [expanded, setExpanded] = useState(false)
 
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+
+    const handleCollapse = () => {
+        // guardar pos actual
+        previousScrollRef.current = window.scrollY
+
+        setExpanded(true)
+    }
+
+
+    useEffect(() => {
+        if ( !expanded ) {
+            window.scrollTo({
+                top: previousScrollRef.current,
+                behavior: "auto"
+            })
+        }
+
+    }, [expanded])
 
 
     return (
@@ -79,7 +95,96 @@ const WebtoonRedesign = () => {
                     <p>
                         Además, según la evolución del proyecto, incluiré mejoras adicionales en áreas como la sección de <b>comentarios</b> o la <b>página de búsqueda</b>, que también presentan oportunidades claras de optimización.
                     </p>
+                </article>
 
+                <article className="webtoon-redesign__block home-section" aria-labelledby="home-section">
+                    <h3 id="home-section" className="webtoon-heading">Home</h3>
+
+                    <div className="home-context">
+                        <h4 className="dark-title">Contexto</h4>
+
+                        <p>
+                            La Home actúa como punto principal de entrada en Webtoon y concentra tanto la continuidad de lectura como el descubrimiento de nuevo contenido. Su correcta jerarquización es clave para que los usuarios puedan decidir rápidamente qué leer sin sentirse abrumados.
+                        </p>
+                    </div>
+
+                    <div className="home-visual-analysis">
+                        <h4 className="dark-title">Análisis visual</h4>
+
+                        <p>Captura de la Home de la app de Webtoon con apuntes sobre el análisis:</p>
+
+                        <div className="screenshot-wrapper" ref={wrapperRef}>
+
+                            <div className={`screenshot-container ${expanded ? "expanded" : ""}`}>
+                                <img 
+                                    src={ HomeAnalysis } 
+                                    alt="Analisis de una captura de la home de webtoon" 
+                                    className="app-screenshot"
+                                />
+
+                                {!expanded && (
+                                    <div className={`fade-overlay ${expanded ? "hidden" : ""}`}></div>
+                                )}
+
+                            </div>
+
+                            {!expanded && (
+                                <button className="toggle-button" onClick={handleCollapse}>
+                                    Ver más
+                                </button>
+                            )}
+
+                            {expanded && (
+                                <button className="toggle-less visible" onClick={() => setExpanded(false)}>
+                                    Ver menos
+                                </button>
+                            )}
+
+                        </div>
+
+                        <p>
+                            A partir del análisis de la Home actual, se identificaron los siguientes problemas principales.
+                        </p>
+                    </div>
+
+                    <div className="home-detected-problems">
+                        <h4 className="dark-title">Problemas detectados</h4>
+
+                        <ul>
+                            <li>Exceso de secciones consecutivas sin una jerarquía clara.</li>
+                            <li>Repetición constante del mismo patrón visual (listas horizontales).</li>
+                            <li>Mezcla de objetivos del usuario y objetivos promocionales.</li>
+                            <li>Dificultad para escanear el contenido rápidamente.</li>
+                            <li>Scroll excesivo para acceder a contenido prioritario.</li>
+                        </ul>
+                    </div>
+
+                    <div className="home-problem-statement highlighted-box">
+                        <h4 className="dark-title">Planteamiento del problema</h4>
+
+                        <p>
+                            Los usuarios de Webtoon necesitan una Home clara y jerarquizada que les permita retomar lecturas y descubrir nuevo contenido de forma rápida y sin esfuerzo, pero la estructura actual presenta demasiadas secciones al mismo nivel, patrones repetidos y contenido poco prioritario, lo que genera confusión y fatiga al navegar.
+                        </p>
+                    </div>
+
+                    <div className="home-objetivos">
+                        <h4 className="dark-title">Objetivos del diseño (derivados del problema)</h4>
+
+                        <ul>
+                            <li>Priorizar acciones clave del usuario (continuar leyendo y descubrir).</li>
+                            <li>Reducir la carga cognitiva.</li>
+                            <li>Establecer una jerarquía clara entre tipos de contenido.</li>
+                            <li>Facilitar la exploración sin necesidad de scroll excesivo.</li>
+                            <li>Diferenciar claramente tipos de contenido.</li>
+                        </ul>
+
+                        <p>Estos objetivos guiarán la ideación y el rediseño de la Home en las siguientes fases del proyecto.</p>
+                    </div>
+
+                </article>
+
+
+                <article className="webtoon-redesign__block temp-msg" aria-labelledby="temp">
                     <div className="temp">
                         <p className="title"><b>PROYECTO EN PROCESO</b></p>
 
@@ -88,94 +193,6 @@ const WebtoonRedesign = () => {
                         </p>
                     </div>
                 </article>
-
-            {/*
-                <article className="videogame-interface__block investigation" aria-labelledby="research-analysis">
-                    <h4 id="research-analysis">Referencias</h4>
-                    <p>
-                        Antes de comenzar con el diseño de la interfaz y otros elementos del juego, nos centramos en desarrollar más a fondo el lore y en definir la <span className="highlighted-text grey">dirección estética</span> que queríamos seguir. Para ello, realizamos una investigación visual y creamos un <span className="highlighted-text grey">mood board</span>, lo que nos ayudó a tener una referencia clara y coherente del estilo que queríamos transmitir.
-                    </p>
-
-                    <figure className="middle-img moodboard">
-                        <img src={ ReferencesImg } alt="Mood board para el diseño del juego" />
-                    </figure>
-                </article>
-
-                <article className="videogame-interface__block lookandfeel" aria-labelledby="lookandfeel-info-navigation">
-                    <h4 id="lookandfeel-info-navigation">Look & Feel</h4>
-                    <p>
-                        Para acompañar la <span className="highlighted-text grey">estética victoriana</span> del juego, elegí dos tipografías que ayudaran a reforzar ese estilo: <i>Vollkorn SC</i> para los títulos, por su aspecto clásico y con carácter, y <i>Crimson Text</i> para el resto de los textos, por su claridad y su toque elegante. Ambas recuerdan a los <span className="highlighted-text grey">libros antiguos</span>, algo que encajaba muy bien con una de las ideas principales del proyecto.
-                    </p>
-
-                    <p>
-                        En el juego, el personaje principal lleva un libro antiguo donde guarda toda la información importante: los objetos que ha encontrado, la gente que ha conocido y el progreso general. Dentro de este libro, los ítems aparecen en forma de <span className="highlighted-text grey">cartas ilustradas</span>, como la que diseñé para la llave del estudio de la vampira. También incluí ejemplos de la interfaz de salud del personaje, adaptada a ambos protagonistas.
-                    </p>
-
-                    <figure className="middle-img ui-one">
-                        <img src={ UIImg01 } alt="Items, barra de salud y fuentes para la UI" />
-                    </figure>
-                </article>
-
-                <article className="videogame-interface__block screens" aria-labelledby="screens-process">
-                    <h4 id="screens-process">Pantallas</h4>
-
-                    <p>
-                        En esta parte del proyecto también trabajé en propuestas de diseño para varias pantallas del juego, como las de <span className="highlighted-text grey">carga, pausa y ajustes (settings)</span>. Para las de carga, opté por un fondo negro con <span className="highlighted-text grey">telarañas</span>, manteniendo el ambiente oscuro y misterioso. En el caso de las pantallas de pausa, probé dos enfoques: una versión que sigue el estilo de las de carga, y otras que incorporan detalles en papel de pergamino, para seguir con la <span className="highlighted-text grey">estética de libro antiguo</span>. La pantalla de ajustes también sigue esta línea, con una interfaz en papel envejecido y marcapáginas tipo cintas, reforzando la idea de que todos los menús forman parte del mismo objeto dentro del mundo del juego.
-                    </p>
-
-                    <figure className="middle-img screens-img">
-                        <img src={ UIImg02 } alt="Propuestas de diseño para pantallas del juego" />
-                    </figure>
-                </article>
-
-                <article className="videogame-interface__block splashart" aria-labelledby="splashart-process">
-                    <h4 id="splashart-process">Splash Art y Vídeo de Inicio</h4>
-
-                    <p>
-                        Como parte final del proyecto, todo el equipo colaboró en la creación de una ilustración tipo splash art que serviría como fondo para la pantalla de inicio del juego. Cada persona del grupo se encargó de una fase del proceso: desde los thumbnails y el boceto, hasta el lineart, el color y el render final con luces y sombras. En mi caso, <span className="highlighted-text grey">trabajé en la fase de color</span>, para la cual propuse cuatro paletas distintas: una en tonos rojos, verdes y grises; otra en rojos, marrones y beige; una con azules y amarillo; y una última en morados con amarillo. Hice pruebas con varias de ellas y finalmente nos decidimos por la paleta morada, con algunos ajustes para adaptarla mejor a la escena.
-                    </p>
-
-                    <figure className="middle-img splashart">
-                        <img src={ UIImg03 } alt="Colores para el splash art de la pantalla de inicio" />
-                    </figure>
-
-                    <p>
-                        Esta ilustración se utilizó como <span className="highlighted-text grey">fondo en la pantalla de inicio del juego</span>, que también aparece en el vídeo que muestro a continuación. En él se puede ver la animación donde se selecciona la opción de comenzar una nueva partida, tras lo cual se activa la pantalla de carga. Uno de los miembros del equipo se encargó de animar esta transición, cerrando así la experiencia de forma coherente con todo el universo visual del proyecto.
-                    </p>
-
-                    <div className="video-wrapper">
-                        <video controls width="100%" poster={ UIVideoPreview }>
-                            <source src={ UIVideo } type="video/mp4" />
-                            Tu navegador no soporta el video.
-                        </video>
-                    </div>
-                </article>
-
-                <div className="videogame-interface__image" style={{backgroundImage: `url(${ FinalImg })`}}></div>
-
-                <section className="videogame-interface__block external-link-section">
-                    <h4>Mira todo mi aporte al proyecto</h4>
-
-                    <p>
-                        Si quieres ver en detalle todos los diseños que aporté al proyecto (personajes, props, etc.), puedes echarle un vistazo a mi ArtStation:
-                    </p>
-
-                    <button className="default" aria-label="Visitar web en vivo">
-                        <a className="default__text" href="https://www.artstation.com/artwork/mAKRN8" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto completo en ArtStation">
-                            Ver proyecto completo
-                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
-                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </button>
-                </section>
-
-            */}
 
             </section>
 

@@ -1,5 +1,6 @@
 :root { 
     --webtoon-main-color: #00dc64;
+    --webtoon-main-lighter-color: #dbfae9;
 }
 
 #webtoon-redesign {
@@ -29,9 +30,24 @@
                 max-width: 1200px;
             }
 
-            h2, h4 {
+            h2, h3, h4 {
                 color: var(--webtoon-main-color);
                 letter-spacing: 2px;
+
+                &.webtoon-heading {
+                    background-color: var(--webtoon-main-color);
+                    color: #fff;
+                    padding: 0.7rem 1rem;
+                    text-align: center;
+                }
+
+                &.dark-title {
+                    color: #000;
+                }
+            }
+
+            h4 {
+                margin-block-start: 3rem;
             }
 
             figure {
@@ -78,7 +94,7 @@
 
             &.overview {
                 #overview-card__container {
-                    background-color: #dbfae9;
+                    background-color: var(--webtoon-main-lighter-color);
                     border-radius: 12px;
                     padding: 24px;
 
@@ -98,13 +114,103 @@
                 }
             }
 
-            .temp {
-                background-color: #ebebeb;
+            &.home-section {
+                padding-block-start: 0.5rem;
+
+                & > div {
+                    margin: 0 1rem;
+                    @media ( min-width: 769px ) { margin: 0 2rem; }
+
+                    h4 {
+                        margin-block-end: 0.2rem;
+                    }
+                }
+                
+            }
+
+            .screenshot-wrapper {
+                position: relative;
+                margin-block-end: 3rem;
+                max-width: 100%;
+
+                .screenshot-container {
+                    position: relative;
+                    overflow: hidden;
+                    overflow-anchor: none;
+                    margin-block-end: 1rem;
+                    max-height: 450px;
+
+                    &.expanded { max-height: 4750px; }
+
+                    .app-screenshot {
+                        display: flex;
+                        margin: 1.5rem auto;
+                        max-width: 800px;
+                        width: 100%;
+                    }
+
+                    .fade-overlay {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 200px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+
+                        background: linear-gradient(
+                            to bottom,
+                            rgba(255,255,255,0),
+                            rgba(255,255,255,1)
+                        );
+
+                        &.hidden { display: none; }
+
+                    }
+                }
+
+                .toggle-button, .toggle-less {
+                    background-color: var(--webtoon-main-color);
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    margin: 1rem auto 0 auto;
+                    padding: 0.3rem 1rem;
+                    letter-spacing: 0.2rem;
+                    transition: all 0.2s ease;
+
+                    &.hidden { display: none; }
+                    &.visible { display: flex; }
+
+                    &:hover {
+                        background-color: var(--webtoon-main-color);
+                        transform: translateY(-5px);
+                    }
+                }
+
+                .toggle-button { display: flex; }
+                .toggle-less { display: none; }
+            }
+
+            .highlighted-box {
+                background-color: #e1e1e1;
                 border-radius: 12px;
-                margin-block-start: 5rem;
+                padding: 0.5rem 1.5rem;
+
+                h4 { margin-block-start: 1rem; }
+            }
+
+            .temp {
+                border: 2px solid #ff4c4c;
+                border-radius: 12px;
+                margin-block-start: 7rem;
                 padding: 24px;
 
                 .title, .text { text-align: center;}
+                .title { color: #ff4c4c; }
             }
 
         }
