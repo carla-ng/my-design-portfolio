@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import './WebtoonRedesign.css';
 import useFadeIn from '../../hooks/useFadeIn';
@@ -18,7 +18,7 @@ const WebtoonRedesign = () => {
     }, [])
 
 
-    const handleCollapse = () => {
+    const handleExpand = () => {
         // guardar pos actual
         previousScrollRef.current = window.scrollY
 
@@ -129,7 +129,7 @@ const WebtoonRedesign = () => {
                             </div>
 
                             {!expanded && (
-                                <button className="toggle-button" onClick={handleCollapse}>
+                                <button className="toggle-button" onClick={handleExpand}>
                                     Ver más
                                 </button>
                             )}
