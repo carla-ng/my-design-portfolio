@@ -4,13 +4,13 @@ import './WebtoonRedesign.css';
 import useFadeIn from '../../hooks/useFadeIn';
 
 import HomeAnalysis from '../../assets/images/webtoon-redesign/webtoon-home_analysis.jpg';
+import HomeSketch from '../../assets/images/webtoon-redesign/webtoon-home_sketch.jpg';
 
 
 const WebtoonRedesign = () => {
     const fadeInClass = useFadeIn()
-    const previousScrollRef = useRef(0)
-    const wrapperRef = useRef(null)
-    const [expanded, setExpanded] = useState(false)
+    const previousScrollRef = useRef({})
+    const [expanded, setExpanded] = useState({})
 
 
     useEffect(() => {
@@ -18,24 +18,27 @@ const WebtoonRedesign = () => {
     }, [])
 
 
-    const handleExpand = () => {
+    const handleExpand = (id) => {
         // guardar pos actual
-        previousScrollRef.current = window.scrollY
+        previousScrollRef.current[id] = window.scrollY
 
-        setExpanded(true)
+        setExpanded(prev => ({
+            ...prev,
+            [id]: true
+        }))
     }
 
+    const handleCollapse = (id) => {
+        setExpanded(prev => ({
+            ...prev,
+            [id]: false
+        }))
 
-    useEffect(() => {
-        if ( !expanded ) {
-            window.scrollTo({
-                top: previousScrollRef.current,
-                behavior: "auto"
-            })
-        }
-
-    }, [expanded])
-
+        window.scrollTo({
+            top: previousScrollRef.current[id],
+            behavior: "auto"
+        })
+    }
 
     return (
         <section id="webtoon-redesign" className="page">
@@ -113,29 +116,29 @@ const WebtoonRedesign = () => {
 
                         <p>Captura de la Home de la app de Webtoon con apuntes sobre el análisis:</p>
 
-                        <div className="screenshot-wrapper" ref={wrapperRef}>
+                        <div className="img-wrapper">
 
-                            <div className={`screenshot-container ${expanded ? "expanded" : ""}`}>
+                            <div className={`img-container ${expanded[0] ? "expanded" : ""}`}>
                                 <img 
                                     src={ HomeAnalysis } 
                                     alt="Analisis de una captura de la home de webtoon" 
-                                    className="app-screenshot"
+                                    className="img-file"
                                 />
 
-                                {!expanded && (
-                                    <div className={`fade-overlay ${expanded ? "hidden" : ""}`}></div>
+                                {!expanded[0] && (
+                                    <div className="fade-overlay"></div>
                                 )}
 
                             </div>
 
-                            {!expanded && (
-                                <button className="toggle-button" onClick={handleExpand}>
+                            {!expanded[0] && (
+                                <button className="toggle-button" onClick={() => handleExpand(0)}>
                                     Ver más
                                 </button>
                             )}
 
-                            {expanded && (
-                                <button className="toggle-less visible" onClick={() => setExpanded(false)}>
+                            {expanded[0] && (
+                                <button className="toggle-less visible" onClick={() => handleCollapse(0)}>
                                     Ver menos
                                 </button>
                             )}
@@ -179,6 +182,41 @@ const WebtoonRedesign = () => {
                         </ul>
 
                         <p>Estos objetivos guiarán la ideación y el rediseño de la Home en las siguientes fases del proyecto.</p>
+                    </div>
+
+                    <div className="home-boceto">
+                        <h4 className="dark-title">Boceto</h4>
+
+                        <p>En el siguiente boceto se puede observar una propuesta para el rediseño de la home.</p>
+                    
+                        <div className="img-wrapper">
+
+                            <div className={`img-container ${expanded[1] ? "expanded" : ""}`}>
+                                <img 
+                                    src={ HomeSketch } 
+                                    alt="Boceto de la home de webtoon" 
+                                    className="img-file sketch"
+                                />
+
+                                {!expanded[1] && (
+                                    <div className="fade-overlay"></div>
+                                )}
+
+                            </div>
+
+                            {!expanded[1] && (
+                                <button className="toggle-button" onClick={() => handleExpand(1)}>
+                                    Ver más
+                                </button>
+                            )}
+
+                            {expanded[1] && (
+                                <button className="toggle-less visible" onClick={() => handleCollapse(1)}>
+                                    Ver menos
+                                </button>
+                            )}
+
+                        </div>
                     </div>
 
                 </article>

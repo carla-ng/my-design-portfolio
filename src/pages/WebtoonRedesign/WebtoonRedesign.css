@@ -128,12 +128,12 @@
                 
             }
 
-            .screenshot-wrapper {
+            .img-wrapper {
                 position: relative;
                 margin-block-end: 3rem;
                 max-width: 100%;
 
-                .screenshot-container {
+                .img-container {
                     position: relative;
                     overflow: hidden;
                     overflow-anchor: none;
@@ -142,11 +142,15 @@
 
                     &.expanded { max-height: 4750px; }
 
-                    .app-screenshot {
+                    .img-file {
                         display: flex;
                         margin: 1.5rem auto;
-                        max-width: 800px;
+                        max-width: 700px;
                         width: 100%;
+
+                        &.sketch {
+                            max-width: 550px;
+                        }
                     }
 
                     .fade-overlay {
