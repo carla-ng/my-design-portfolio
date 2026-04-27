@@ -36,10 +36,28 @@ const ComponentSystem = () => {
                         Colaboré estrechamente con el equipo de diseño UX/UI para definir requisitos, aportar feedback técnico, validar diseños y garantizar que las soluciones fueran viables y consistentes. Además, tuve la oportunidad de diseñar componentes y páginas adicionales según las necesidades del proyecto.
                     </p>
                 </div>
+
+                <section className="external-link-section-two catalogue">
+                    <div>
+                        <p>Visita el catálogo para ver una selección de algunos de los componentes pertenecientes al sistema creado:</p>
+                        <button className="default">
+                            <a className="default__text" href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank" rel="noopener noreferrer" aria-label="Ir al catálogo de componentes">
+                            Ir a Catálogo
+                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
+                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        </button>
+                    </div>
+                </section>
             </header>
 
             <div className={`component-system-container ${fadeInClass}`}>
-
                 <div className="component-system__summary">
                     <div className="component-system__summary-first">
                         <article>
@@ -129,7 +147,7 @@ const ComponentSystem = () => {
                     <div>
                         <h4 id="maintenance-title">Mantenimiento y obstáculos</h4>
                         
-                        <p>Tras la creación del sistema, el equipo de diseño UX/UI se desintegró temporalmente, lo que llevó a algunos desarrolladores, yo incluida, a asumir la responsabilidad de diseñar y desarrollar varios componentes y páginas según las necesidades de la empresa. Posteriormente, se integró un nuevo equipo de diseñadores UX/UI junior, quienes requirieron nuestro apoyo y supervisión para crear los diseños de componentes y portales, que luego nosotros validábamos. En esta etapa, desempeñé el rol de responsable del sistema de componentes y portales dentro del equipo de desarrollo.</p>
+                        <p>Tras la creación del sistema, <strong>el equipo de diseño UX/UI se desintegró temporalmente</strong>, lo que llevó a algunos desarrolladores, yo incluida, a asumir la responsabilidad de diseñar y desarrollar varios componentes y páginas según las necesidades de la empresa. Posteriormente, se integró un nuevo equipo de diseñadores UX/UI junior, quienes requirieron nuestro apoyo y supervisión para crear los diseños de componentes y portales, que luego nosotros validábamos. En esta etapa, desempeñé el rol de responsable del sistema de componentes y portales dentro del equipo de desarrollo.</p>
 
                         <p>Una vez el nuevo equipo de diseñadores se había familiarizado con el sistema, continuamos con el siguiente flujo de trabajo para su mantenimiento y el de nuevos desarrollos de componentes y portales:</p>
                     </div>
@@ -153,26 +171,6 @@ const ComponentSystem = () => {
                 </section>
 
                 <div className="component-system__image" style={{backgroundImage: `url(${ComponentsImage})`}} role="img" aria-label="Imagen del sistema de componentes"></div>
-
-                <section className="component-system__info external-link-section catalogue">
-                    <div>
-                        <h4>Catálogo</h4>
-                        <p>Ver una selección de algunos de los componentes pertenecientes al sistema creado:</p>
-                        <button className="default">
-                            <a className="default__text" href="https://carla-ng.github.io/my-portfolio/subrepositories/components/components.html" target="_blank" rel="noopener noreferrer" aria-label="Ir al catálogo de componentes">
-                            Ir a Catálogo
-                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
-                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                        </button>
-                    </div>
-                </section>
 
             </div>
 

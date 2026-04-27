@@ -41,11 +41,11 @@ const Home = () => {
                 <Card image={ WebtoonRedesignImage } title="Caso de Estudio: Rediseño UX/UI de la app de Webtoon" description="Centrado en mejorar la navegación, la home, la biblioteca del usuario y la experiencia de descubrimiento y lectura. Un proyecto de rediseño enfocado en resolver problemas reales de usabilidad y aportar nuevas funcionalidades orientadas al usuario." link="webtoon-redesign" ariaHiddenValue="true" roleValue="presentation" />
                 }
 
-                <Card image={ PersonalWebsiteImage } title="Caso de Estudio: Diseño y Desarrollo de mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="personal-website" />
-
                 <Card image={ ChallengesImage } title="Retos de Diseño UX/UI" description="Exploración de diversos retos en línea centrados en la creación de componentes y páginas web. Cada proyecto incluye el proceso completo: sketch, wireframe y mockup final, demostrando mi habilidad para transformar ideas en diseños funcionales y estéticamente atractivos." link="challenges" additionalClass="challenges" />
 
                 <Card image={ UIImage } title="Diseño de Interfaz de Videojuego" description="Como parte de un proyecto colaborativo en mi Máster en Concept Art, trabajé en el diseño de una pequeña interfaz para el videojuego ficticio &quot;When the Night Falls&quot;. Esta tarea formó parte del desarrollo de concept art, donde buscamos alinear la experiencia del usuario con la narrativa y estética del juego." link="videogame-interface" />
+
+                <Card image={ PersonalWebsiteImage } title="Caso de Estudio: Diseño y Desarrollo de mi Web Personal" description="Un análisis detallado del diseño y desarrollo de mi portafolio como desarrolladora web. Este proyecto destaca mis habilidades como programadora, desde la conceptualización y el diseño UX/UI hasta la implementación técnica. Descubre cómo combiné creatividad y código para crear una experiencia de usuario fluida y profesional." link="personal-website" />
                 
             </section>
             

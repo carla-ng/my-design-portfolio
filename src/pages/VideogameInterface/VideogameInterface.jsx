@@ -33,6 +33,26 @@ const VideogameInterface = () => {
                         Este proyecto forma parte de una colaboración dentro de mi Máster en Concept Art, en la que <span className="highlighted-text">desarrollamos el universo visual de un videojuego</span> ficticio titulado &quot;<i>When the Night Falls</i>&quot;. Una de mis contribuciones fue el diseño de una interfaz de usuario que encajara con la ambientación y el estilo artístico general del juego. El objetivo era crear una UI clara y funcional, que a la vez se sintiera parte del mundo que habíamos creado. Para ello, trabajé teniendo en cuenta tanto la experiencia del jugador como la estética general del proyecto, colaborando con el resto del equipo para asegurar que el diseño funcionara bien dentro del conjunto.
                     </p>
                 </div>
+
+                <section className="external-link-section-two">
+                    <p>
+                        Y si quieres ver en detalle todos los diseños que aporté al proyecto (personajes, props, etc.), puedes echarle un vistazo a mi ArtStation:
+                    </p>
+
+                    <button className="default" aria-label="Visitar web en vivo">
+                        <a className="default__text" href="https://www.artstation.com/artwork/mAKRN8" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto completo en ArtStation">
+                            Ver proyecto completo
+                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
+                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
+                </section>
             </header>            
 
             <section className={`videogame-interface-container ${fadeInClass}`}>
@@ -107,28 +127,6 @@ const VideogameInterface = () => {
                 </article>
 
                 <div className="videogame-interface__image" style={{backgroundImage: `url(${ FinalImg })`}}></div>
-
-                <section className="videogame-interface__block external-link-section">
-                    <h4>Mira todo mi aporte al proyecto</h4>
-
-                    <p>
-                        Si quieres ver en detalle todos los diseños que aporté al proyecto (personajes, props, etc.), puedes echarle un vistazo a mi ArtStation:
-                    </p>
-
-                    <button className="default" aria-label="Visitar web en vivo">
-                        <a className="default__text" href="https://www.artstation.com/artwork/mAKRN8" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto completo en ArtStation">
-                            Ver proyecto completo
-                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
-                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </button>
-                </section>
 
             </section>
 

@@ -35,6 +35,26 @@ const PersonalWebsite = () => {
                         En esta página, te presento el caso de estudio detallado de la <span className="highlighted-text">creación de mi portafolio como desarrolladora web</span>. A través de este proyecto, no solo desarrollé una plataforma para mostrar mis habilidades técnicas, sino que también apliqué principios de diseño UX/UI para crear una experiencia de usuario intuitiva y visualmente atractiva. Descubre cómo abordé el proceso de diseño y desarrollo, los desafíos encontrados, y las soluciones implementadas para crear una presencia online efectiva y coherente.
                     </p>
                 </div>
+
+                <section className="external-link-section-two">
+                    <p>
+                        Explora el sitio completo en vivo:
+                    </p>
+
+                    <button className="default" aria-label="Visitar web en vivo">
+                        <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visita la web">
+                            Visita la web
+                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
+                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
+                </section>
             </header>            
 
             <section className={`personal-website-container ${fadeInClass}`}>
@@ -204,28 +224,6 @@ const PersonalWebsite = () => {
                 </article>
 
                 <div className="personal-website__image" style={{backgroundImage: `url(${ ScreenshotsImg })`}}></div>
-
-                <section className="personal-website__block external-link-section">
-                    <h4>Descubre mi sitio de desarrollo web en acción</h4>
-
-                    <p>
-                        Explora el sitio completo en vivo:
-                    </p>
-
-                    <button className="default" aria-label="Visitar web en vivo">
-                        <a className="default__text" href="https://carla-nardone.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Visita la web">
-                            Visita la web
-                            <svg className="default__icon right" fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <g>
-                                        <rect width="25" height="25" transform="rotate(180 12 12)" opacity="0"/>
-                                        <path d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z"/>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                    </button>
-                </section>
 
             </section>
 

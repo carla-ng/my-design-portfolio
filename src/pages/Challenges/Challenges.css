@@ -20,7 +20,7 @@
                 }
             }
 
-            .challlenges__preview {
+            .challenges__preview {
                 background-size: 100% auto;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -63,7 +63,7 @@
                 }
             }
 
-            .challlenges__images {
+            .challenges__images {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
