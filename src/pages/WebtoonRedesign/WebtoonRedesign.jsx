@@ -5,6 +5,7 @@ import useFadeIn from '../../hooks/useFadeIn';
 
 import HomeAnalysis from '../../assets/images/webtoon-redesign/webtoon-home_analysis.jpg';
 import HomeSketch from '../../assets/images/webtoon-redesign/webtoon-home_sketch.jpg';
+import HomeWireframe from '../../assets/images/webtoon-redesign/webtoon-home_wireframe.jpg';
 
 
 const WebtoonRedesign = () => {
@@ -222,31 +223,31 @@ const WebtoonRedesign = () => {
                     <div className="home-wireframe">
                         <h4 className="dark-title">Wireframe</h4>
 
-                        <p>Wireframe de la nueva Home, en el que se establece una jerarquía clara y se organizan los contenidos en función de las principales necesidades del usuario.</p>
+                        <p>Wireframe de la nueva Home. Ha sido creado con la ayuda de <b>Figma Make (herramienta IA de Figma)</b>, al introducirle el boceto anterior y pidiéndole que lo convirtiera en un wireframe.</p>
                     
                         <div className="img-wrapper">
 
-                            <div className={`img-container ${expanded[1] ? "expanded" : ""}`}>
+                            <div className={`img-container ${expanded[2] ? "expanded" : ""}`}>
                                 <img 
-                                    src={ HomeSketch } 
+                                    src={ HomeWireframe } 
                                     alt="Wireframe de la home de webtoon" 
                                     className="img-file wireframe"
                                 />
 
-                                {!expanded[1] && (
+                                {!expanded[2] && (
                                     <div className="fade-overlay"></div>
                                 )}
 
                             </div>
 
-                            {!expanded[1] && (
-                                <button className="toggle-button" onClick={() => handleExpand(1)}>
+                            {!expanded[2] && (
+                                <button className="toggle-button" onClick={() => handleExpand(2)}>
                                     Ver más
                                 </button>
                             )}
 
-                            {expanded[1] && (
-                                <button className="toggle-less visible" onClick={() => handleCollapse(1)}>
+                            {expanded[2] && (
+                                <button className="toggle-less visible" onClick={() => handleCollapse(2)}>
                                     Ver menos
                                 </button>
                             )}

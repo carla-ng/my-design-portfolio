@@ -125,10 +125,6 @@
                         margin-block-end: 0.2rem;
                     }
                 }
-
-                .home-wireframe {
-                    display: none;
-                }
                 
             }
 
@@ -151,6 +147,10 @@
                         margin: 1.5rem auto;
                         max-width: 550px;
                         width: 100%;
+
+                        &.wireframe {
+                            max-width: 500px;
+                        }
                     }
 
                     .fade-overlay {
