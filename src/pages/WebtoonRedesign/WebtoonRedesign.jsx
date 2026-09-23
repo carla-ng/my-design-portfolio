@@ -223,7 +223,7 @@ const WebtoonRedesign = () => {
                     <div className="home-wireframe">
                         <h4 className="dark-title">Wireframe</h4>
 
-                        <p>Wireframe de la nueva Home. Ha sido creado con la ayuda de <b>Figma Make (herramienta IA de Figma)</b>, al introducirle el boceto anterior y pidiéndole que lo convirtiera en un wireframe.</p>
+                        <p>Wireframe de la nueva Home. Ha sido creado con la ayuda del <b>Agente de Figma (asistente nativo de IA)</b>, al introducirle el boceto anterior y pidiéndole que lo convirtiera en un wireframe.</p>
                     
                         <div className="img-wrapper">
 
