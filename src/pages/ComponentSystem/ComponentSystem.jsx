@@ -25,7 +25,7 @@ const ComponentSystem = () => {
             <header className="introduction-outer-container">
                 <div className="introduction">
                     <h1 className="introduction__title">
-                        <span>Diseño de Sistema de Componentes</span>
+                        <span>Sistema de Diseño</span>
                     </h1>
 
                     <p className={`introduction__text ${fadeInClass}`}>

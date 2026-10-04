@@ -35,7 +35,7 @@ const Home = () => {
             </header>
 
             <section className={`projects-container ${fadeInClass}`}>
-                <Card image={ ComponentSystemImage } title="Diseño de Sistema de Componentes" description="En mi última empresa trabajé como desarrolladora web y ocasional diseñadora UX/UI en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI: guiando, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
+                <Card image={ ComponentSystemImage } title="Sistema de Diseño" description="En mi última empresa trabajé como desarrolladora web y ocasional diseñadora UX/UI en un proyecto de creación de un nuevo sistema de componentes y portales. Colaboré estrechamente con el equipo de diseño UX/UI: guiando, proporcionando feedback y resolviendo dudas. Una vez creado el sistema, diseñé en ocasiones componentes adicionales y algunas páginas web, además validé los nuevos componentes y diseños web propuestos por los diseñadores." link="component-system" />
 
                 {
                 <Card image={ WebtoonRedesignImage } title="Caso de Estudio: Rediseño UX/UI de la app de Webtoon" description="Centrado en mejorar la navegación, la home, la biblioteca del usuario y la experiencia de descubrimiento y lectura. Un proyecto de rediseño enfocado en resolver problemas reales de usabilidad y aportar nuevas funcionalidades orientadas al usuario." link="webtoon-redesign" ariaHiddenValue="true" roleValue="presentation" />
