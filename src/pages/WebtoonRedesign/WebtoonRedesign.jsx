@@ -51,13 +51,13 @@ const WebtoonRedesign = () => {
                     </h1>
                     <p className={`introduction__text ${fadeInClass}`}>
                         <i>Webtoon</i> es una de las plataformas de cómics digitales más populares del mundo, con millones de usuarios que leen contenido diariamente. Sin embargo, a pesar de su éxito, la aplicación presenta varias oportunidades de mejora en aspectos clave como la navegación, la organización de la información, la personalización y la claridad visual.
-                    </p> 
+                    </p>
 
                     <p className={`introduction__text ${fadeInClass}`}>
                         Este proyecto es un <span className="highlighted-text">rediseño UX/UI focalizado</span>, en el que analizo y optimizo algunas de las áreas que generan mayor fricción para los usuarios. El objetivo no es reconstruir <i>Webtoon</i> desde cero, sino <span className="highlighted-text">mejorar las secciones donde la experiencia actual resulta confusa, limitada o poco intuitiva</span>, y proponer nuevas funcionalidades que aporten valor real.
                     </p>
                 </div>
-            </header>            
+            </header>
 
             <section className={`webtoon-redesign-container ${fadeInClass}`}>
 
@@ -69,7 +69,6 @@ const WebtoonRedesign = () => {
                             <p><b>Tipo de proyecto:</b> Proyecto personal (<i>en proceso</i>)</p>
                             <p><b>Rol:</b> UX/UI Designer</p>
                             <p><b>Año:</b> 2026</p>
-                            <p><b>Metodología:</b> Doble Diamante</p>
                             <p><b>Alcance:</b> Rediseño UX/UI focalizado (Home, navegación, biblioteca del usuario y página de un webtoon)</p>
                         </div>
 
@@ -79,7 +78,7 @@ const WebtoonRedesign = () => {
                                 Elegí Webtoon como caso de estudio porque, como usuaria habitual, he experimentado directamente las limitaciones de la app actual y vi una oportunidad ideal para proponer una experiencia más clara, personalizada y centrada en el usuario.
                             </p>
                         </div>
-                    </div>                    
+                    </div>
                 </article>
 
                 <article className="webtoon-redesign__block planning" aria-labelledby="redesign-planning">
@@ -120,9 +119,9 @@ const WebtoonRedesign = () => {
                         <div className="img-wrapper">
 
                             <div className={`img-container ${expanded[0] ? "expanded" : ""}`}>
-                                <img 
-                                    src={ HomeAnalysis } 
-                                    alt="Analisis de una captura de la home de webtoon" 
+                                <img
+                                    src={HomeAnalysis}
+                                    alt="Analisis de una captura de la home de webtoon"
                                     className="img-file"
                                 />
 
@@ -189,13 +188,13 @@ const WebtoonRedesign = () => {
                         <h4 className="dark-title">Boceto</h4>
 
                         <p>Primeras exploraciones de la nueva estructura de la Home, centradas en definir una jerarquía más clara y reducir la complejidad visual.</p>
-                    
+
                         <div className="img-wrapper">
 
                             <div className={`img-container ${expanded[1] ? "expanded" : ""}`}>
-                                <img 
-                                    src={ HomeSketch } 
-                                    alt="Boceto de la home de webtoon" 
+                                <img
+                                    src={HomeSketch}
+                                    alt="Boceto de la home de webtoon"
                                     className="img-file sketch"
                                 />
 
@@ -224,13 +223,13 @@ const WebtoonRedesign = () => {
                         <h4 className="dark-title">Wireframe</h4>
 
                         <p>Wireframe de la nueva Home. Ha sido creado con la ayuda del <b>Agente de Figma (asistente nativo de IA)</b>, al introducirle el boceto anterior y pidiéndole que lo convirtiera en un wireframe.</p>
-                    
+
                         <div className="img-wrapper">
 
                             <div className={`img-container ${expanded[2] ? "expanded" : ""}`}>
-                                <img 
-                                    src={ HomeWireframe } 
-                                    alt="Wireframe de la home de webtoon" 
+                                <img
+                                    src={HomeWireframe}
+                                    alt="Wireframe de la home de webtoon"
                                     className="img-file wireframe"
                                 />
 
