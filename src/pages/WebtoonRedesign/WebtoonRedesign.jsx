@@ -70,6 +70,7 @@ const WebtoonRedesign = () => {
                             <p><b>Rol:</b> UX/UI Designer</p>
                             <p><b>Año:</b> 2026</p>
                             <p><b>Alcance:</b> Rediseño UX/UI focalizado (Home, navegación, biblioteca del usuario y página de un webtoon)</p>
+                            <p><b>Metodología:</b> Doble Diamante</p>
                         </div>
 
                         <div id="overview-card__motivation">
@@ -111,6 +112,18 @@ const WebtoonRedesign = () => {
                         </p>
                     </div>
 
+                    <div className="home-investigation">
+                        <h4 className="dark-title">Investigación exploratoria</h4>
+
+                        <p>
+                            Para identificar oportunidades de mejora en Webtoon, combiné mi experiencia como usuaria habitual con opiniones de otros lectores y comentarios compartidos en comunidades online, incluyendo Reddit y las secciones de comentarios de los webtoons.
+                        </p>
+                        <p>
+                            Esta exploración inicial me permitió recoger diferentes perspectivas sobre la experiencia de lectura, la navegación, el descubrimiento de contenido y la organización de la biblioteca. Estas observaciones, junto con el siguiente análisis de la interfaz actual, sirvieron como punto de partida para identificar posibles problemas y oportunidades de mejora.
+                        </p>
+                        <p>Los hallazgos tienen un carácter exploratorio y no pretenden representar a toda la comunidad de usuarios de Webtoon.</p>
+                    </div>
+
                     <div className="home-visual-analysis">
                         <h4 className="dark-title">Análisis visual</h4>
 
@@ -145,20 +158,35 @@ const WebtoonRedesign = () => {
 
                         </div>
 
-                        <p>
-                            A partir del análisis de la Home actual, se identificaron los siguientes problemas principales.
-                        </p>
                     </div>
 
                     <div className="home-detected-problems">
                         <h4 className="dark-title">Problemas detectados</h4>
 
+                        <p>
+                            A partir del análisis visual de la Home y de la investigación exploratoria, se identificaron las siguientes oportunidades de mejora.
+                        </p>
+
+                        <p><u>Hallazgos del análisis visual</u></p>
+
                         <ul>
-                            <li>Exceso de secciones consecutivas sin una jerarquía clara.</li>
-                            <li>Repetición constante del mismo patrón visual (listas horizontales).</li>
-                            <li>Mezcla de objetivos del usuario y objetivos promocionales.</li>
-                            <li>Dificultad para escanear el contenido rápidamente.</li>
-                            <li>Scroll excesivo para acceder a contenido prioritario.</li>
+                            <li><b>Jerarquía visual poco definida:</b> numerosas secciones con un tratamiento visual similar.</li>
+                            <li><b>Patrones de contenido repetitivos:</b> el uso recurrente de carruseles y listas horizontales dificulta distinguir algunas secciones según su propósito.</li>
+                            <li><b>Diferenciación entre contenidos:</b> algunas secciones de descubrimiento presentan estructuras similares pese a tener enfoques distintos.</li>
+                            <li><b>Extensión de la Home:</b> la acumulación de secciones alarga el recorrido necesario para explorar el contenido.</li>
+                        </ul>
+
+                        <p><u>Hallazgos de la investigación exploratoria</u></p>
+
+                        <p>
+                            Las opiniones recogidas de otros lectores, junto con mi propia experiencia como usuaria, reforzaron algunas de estas observaciones e identificaron otras oportunidades de mejora:
+                        </p>
+
+                        <ul>
+                            <li><b>Sobrecarga de información:</b> la cantidad de contenido puede resultar abrumadora y desincentivar la exploración de la Home.</li>
+                            <li><b>Relevancia de las recomendaciones:</b>  algunos lectores consideran que las recomendaciones no siempre se ajustan a sus gustos e intereses.</li>
+                            <li><b>Necesidad de personalización:</b>  se identifica una oportunidad para adaptar mejor el contenido mostrado a las preferencias individuales.</li>
+                            <li><b>Claridad del propósito de las secciones:</b>  algunas secciones se perciben como similares o no permiten comprender claramente qué las diferencia.</li>
                         </ul>
                     </div>
 
@@ -166,19 +194,19 @@ const WebtoonRedesign = () => {
                         <h4 className="dark-title">Planteamiento del problema</h4>
 
                         <p>
-                            Los usuarios de Webtoon necesitan una Home clara y jerarquizada que les permita retomar lecturas y descubrir nuevo contenido de forma rápida y sin esfuerzo, pero la estructura actual presenta demasiadas secciones al mismo nivel, patrones repetidos y contenido poco prioritario, lo que genera confusión y fatiga al navegar.
+                            Los usuarios de Webtoon necesitan una Home que les permita retomar sus lecturas y descubrir contenido relevante para sus intereses de forma clara y sencilla. Sin embargo, la acumulación de secciones, la repetición de patrones visuales y la limitada diferenciación entre contenidos pueden generar una experiencia abrumadora, dificultar la identificación de información prioritaria y reducir el interés por explorar la página.
                         </p>
                     </div>
 
                     <div className="home-objetivos">
-                        <h4 className="dark-title">Objetivos del diseño (derivados del problema)</h4>
+                        <h4 className="dark-title">Objetivos del diseño</h4>
 
                         <ul>
-                            <li>Priorizar acciones clave del usuario (continuar leyendo y descubrir).</li>
-                            <li>Reducir la carga cognitiva.</li>
-                            <li>Establecer una jerarquía clara entre tipos de contenido.</li>
-                            <li>Facilitar la exploración sin necesidad de scroll excesivo.</li>
-                            <li>Diferenciar claramente tipos de contenido.</li>
+                            <li><b>Reducir la sobrecarga visual y cognitiva</b>, simplificando la presentación y organización del contenido.</li>
+                            <li><b>Priorizar las acciones principales</b>, facilitando el acceso a las lecturas en curso.</li>
+                            <li><b>Mejorar la jerarquía visual</b>, diferenciando las secciones según su propósito.</li>
+                            <li><b>Facilitar el descubrimiento de contenido relevante</b>, dando mayor protagonismo a las recomendaciones y a los intereses del usuario.</li>
+                            <li><b>Optimizar la exploración de la Home</b>, reduciendo el esfuerzo necesario para localizar contenido de interés.</li>
                         </ul>
 
                         <p>Estos objetivos guiarán la ideación y el rediseño de la Home en las siguientes fases del proyecto.</p>
@@ -187,7 +215,13 @@ const WebtoonRedesign = () => {
                     <div className="home-boceto">
                         <h4 className="dark-title">Boceto</h4>
 
-                        <p>Primeras exploraciones de la nueva estructura de la Home, centradas en definir una jerarquía más clara y reducir la complejidad visual.</p>
+                        <p>
+                            A partir de los problemas identificados durante el análisis, realicé una primera exploración de la estructura de la Home, definiendo la distribución de las secciones y su jerarquía.
+                        </p>
+
+                        <p>
+                            La propuesta contempla una organización más clara del contenido, la priorización de las lecturas en curso y la adaptación de las recomendaciones al historial y los intereses del usuario.
+                        </p>
 
                         <div className="img-wrapper">
 
@@ -222,7 +256,9 @@ const WebtoonRedesign = () => {
                     <div className="home-wireframe">
                         <h4 className="dark-title">Wireframe</h4>
 
-                        <p>Wireframe de la nueva Home. Ha sido creado con la ayuda del <b>Agente de Figma (asistente nativo de IA)</b>, al introducirle el boceto anterior y pidiéndole que lo convirtiera en un wireframe.</p>
+                        <p>
+                        Para agilizar esta fase, utilicé el <b>Agente de Figma (asistente nativo de IA)</b>, proporcionándole el boceto como referencia y solicitándole que lo transformara en un wireframe. El resultado me permitió visualizar la propuesta en un formato más definido antes de avanzar al diseño UI.
+                        </p>
 
                         <div className="img-wrapper">
 
@@ -263,7 +299,11 @@ const WebtoonRedesign = () => {
                         <p className="title"><b>PROYECTO EN PROCESO</b></p>
 
                         <p className="text">
-                            Este es un proyecto <b>personal</b>, con fases de investigación, análisis heurístico, definición del problema, ideación, wireframing y diseño UI final. A lo largo del case study expongo las decisiones de diseño, los problemas detectados y las soluciones planteadas, combinando una perspectiva tanto <b>UX</b> como <b>UI</b>.
+                            Este proyecto personal explora el rediseño UX/UI de distintas áreas de Webtoon. En este caso de estudio presento la investigación exploratoria, el análisis de la interfaz, los problemas identificados y las propuestas de mejora desarrolladas durante la fase de ideación.
+                        </p>
+
+                        <p className="text">
+                            Actualmente, el proyecto se encuentra en la fase de wireframing, antes de continuar con el diseño UI y la revisión de la propuesta.
                         </p>
                     </div>
                 </article>
