@@ -79,19 +79,6 @@ const Challenges = () => {
                     </button>
                 </article>
 
-
-                <article className="challenges__calculator" aria-labelledby="calculator-title">
-                    <h2 id="calculator-title">Calculadora</h2>
-
-                    <div className="challenges__preview calculator" style={{backgroundImage: `url(${CalculatorPreview})`}} role="img" aria-label="Vista previa del reto Calculadora"></div>
-
-                    <p>Hoy en día es normal que todos tengamos una calculadora en el bolsillo, ya que es una de las cosas que solemos tener por defecto en nuestro móvil. Todas estas calculadoras suelen ser muy parecidas, algunas tal vez más complejas que otras. Para plantearme un reto distinto y no hacer lo mismo que todos, he decidio diseñar una <strong>calculadora para niños</strong>, la cual debería ser más sencilla y llamativa que una utilizada comúnmente por adultos.</p>          
-
-                    <button className="view-more default" aria-label="Ver más detalles del reto Calculadora">
-                        <span className="default__text" onClick={() => goToProject('calculator')}>Ver más</span>
-                    </button>
-                </article>
-
             </section>
 
         </section>
